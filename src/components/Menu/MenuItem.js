@@ -13,10 +13,9 @@ class MenuItem extends Component{
     }
     render(){
         return(
-            <div className="MenuItem"
-              
+            <div className="MenuItem"  
             >
-                {this.props.children}
+                {this.props.label}
             </div>
         );
             

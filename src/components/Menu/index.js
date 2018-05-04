@@ -24,9 +24,11 @@ class MenuContainer extends Component {
         return (
         <div className="MenuContainer" onClick={this.handleClick}>
             <Menu ref="left" alignment="left" visible={this.state.visible}>
-                <MenuItem hash="first-page">First Page</MenuItem>
-                <MenuItem hash="second-page">Second Page</MenuItem>
-                <MenuItem hash="third-page">Third Page</MenuItem>
+                <MenuItem hash="first-page" label="First"/>
+                <MenuItem hash="second-page" label="Info"/>
+                <MenuItem hash="third-page" label="Some Works"/>
+                <MenuItem hash="third-page" label="Finde me"/>
+                <MenuItem hash="third-page" label="Language"/>
             </Menu>
 
             </div>
