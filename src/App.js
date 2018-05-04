@@ -1,6 +1,8 @@
 import React, { Component, } from 'react';
 import MenuContainer from './components/Menu/'
+import Main from './components/Main/'
 import logo from './logo.svg';
+import Line from './svg/linie.svg';
 import './scss/App.css';
 
 class App extends Component {
@@ -8,13 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <MenuContainer />
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to my Website</h1>
-        </header>
-        <p className="App-intro">
-          That is the first commit <code>src/App.js</code>.
-        </p>
+        <Main />
       </div>
     );
   }

@@ -1,0 +1,42 @@
+@import "./Colors.scss";
+
+.Main {
+    &__von {
+        display: inline-block;
+        position: relative;  
+        padding: 0;
+        margin: 5px;
+
+        &:before, &:after {
+            content: "";
+            position: absolute;
+            height: 1px;
+            border-top: 1px solid $black;
+            top: 10px;
+            width: 100px;
+        }
+
+        &:before {
+            right: 50%;
+            margin-right: 40px;
+        }
+
+        &:after {
+            left: 50%;
+            margin-left: 40px;
+        }
+    }
+
+    &__bigTitle {
+        text-transform: uppercase;
+        padding: 0;
+        margin: 5px;
+    }
+
+    &__presentation{
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-weight: 200;
+        margin: 15px 0 5px 0;
+    }
+}

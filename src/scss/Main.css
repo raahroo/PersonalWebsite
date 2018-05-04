@@ -1,0 +1,29 @@
+.Main__von {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  margin: 5px; }
+  .Main__von:before, .Main__von:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    border-top: 1px solid #000000;
+    top: 10px;
+    width: 100px; }
+  .Main__von:before {
+    right: 50%;
+    margin-right: 40px; }
+  .Main__von:after {
+    left: 50%;
+    margin-left: 40px; }
+
+.Main__bigTitle {
+  text-transform: uppercase;
+  padding: 0;
+  margin: 5px; }
+
+.Main__presentation {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 200;
+  margin: 15px 0 5px 0; }
