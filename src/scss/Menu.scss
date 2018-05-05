@@ -1,8 +1,17 @@
 @import "./Colors.scss";
 
+.MenuContainer {
+  &__opened {
+    background: rgba(0,0,0,0.6);
+    height: 100%;
+  }
+}
+
 .Menu {
   display:flex;
   $menu-width:290px;
+
+  
 
   >div {
     position:absolute;

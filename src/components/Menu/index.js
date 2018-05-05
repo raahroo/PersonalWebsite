@@ -22,7 +22,9 @@ class MenuContainer extends Component {
 
     render() {
         return (
-        <div className="MenuContainer" onClick={this.handleClick}>
+        <div
+            className={"MenuContainer" + (this.state.visible ? '__opened' : '')}
+            onClick={this.handleClick}>
             <Menu ref="left" alignment="left" visible={this.state.visible}>
                 <MenuItem hash="first-page" label="First"/>
                 <MenuItem hash="second-page" label="Info"/>
