@@ -1,7 +1,7 @@
 @import "./Colors.scss";
 
 .Menu {
-  display:block;
+  display:flex;
   $menu-width:290px;
 
   >div {
@@ -31,7 +31,10 @@
       border-bottom:solid 1px #555;
       cursor:pointer;
       color: $black;
-      line-height: 72px;
+      line-height: 60px;
+      font-weight: 500;
+      font-style: italic;
+      font-size: 22px;
 
       span {
         padding: 0 0 0 15px;
@@ -62,6 +65,19 @@
         animation-iteration-count: infinite;
         animation-timing-function: linear;
       }
+    }
+  }
+  &__hamburguer {
+    border: 0;
+    position: absolute;
+    display: block;
+    min-height: 50px;
+    min-width: 50px;
+    background-color: transparent;
+    top: 10px;
+
+    img {
+      display: block;
     }
   }
 }

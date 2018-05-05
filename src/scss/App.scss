@@ -1,15 +1,22 @@
 @import "./Colors.scss";
 @import "./Menu.scss";
 @import "./Main.scss";
+@import url('https://fonts.googleapis.com/css?family=Anton|Cormorant+Garamond');
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+}
 
 .App {
   text-align: center;
   background: $beige;
+  height: 100vh;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
   height: 80px;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 
 .App-header {

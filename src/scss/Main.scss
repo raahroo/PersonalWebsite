@@ -6,6 +6,8 @@
         position: relative;  
         padding: 0;
         margin: 5px;
+        font-style: italic;
+        font-weight: 700;
 
         &:before, &:after {
             content: "";
@@ -31,12 +33,25 @@
         text-transform: uppercase;
         padding: 0;
         margin: 5px;
+        font-family: 'Anton', sans-serif;
     }
 
     &__presentation{
         text-transform: uppercase;
         letter-spacing: 4px;
         font-weight: 200;
-        margin: 15px 0 5px 0;
+        margin: 5px 0 5px 0;
+        line-height: 25px;
+    }
+    &__signature {
+        margin: 0px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    &__biographie{
+        font-style: italic;
+        font-size: 14px;
+        font-weight: 600;
     }
 }

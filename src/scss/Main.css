@@ -2,7 +2,9 @@
   display: inline-block;
   position: relative;
   padding: 0;
-  margin: 5px; }
+  margin: 5px;
+  font-style: italic;
+  font-weight: 700; }
   .Main__von:before, .Main__von:after {
     content: "";
     position: absolute;
@@ -20,10 +22,22 @@
 .Main__bigTitle {
   text-transform: uppercase;
   padding: 0;
-  margin: 5px; }
+  margin: 5px;
+  font-family: 'Anton', sans-serif; }
 
 .Main__presentation {
   text-transform: uppercase;
   letter-spacing: 4px;
   font-weight: 200;
-  margin: 15px 0 5px 0; }
+  margin: 5px 0 5px 0;
+  line-height: 25px; }
+
+.Main__signature {
+  margin: 0px;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+.Main__biographie {
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 600; }

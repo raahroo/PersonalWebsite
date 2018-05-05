@@ -1,5 +1,5 @@
 .Menu {
-  display: block; }
+  display: flex; }
   .Menu > div {
     position: absolute;
     z-index: 2;
@@ -21,7 +21,10 @@
       border-bottom: solid 1px #555;
       cursor: pointer;
       color: #000000;
-      line-height: 72px; }
+      line-height: 60px;
+      font-weight: 500;
+      font-style: italic;
+      font-size: 22px; }
       .Menu > div > .MenuItem span {
         padding: 0 0 0 15px; }
       .Menu > div > .MenuItem:hover {
@@ -45,6 +48,16 @@
         animation-duration: 8000ms;
         animation-iteration-count: infinite;
         animation-timing-function: linear; }
+  .Menu__hamburguer {
+    border: 0;
+    position: absolute;
+    display: block;
+    min-height: 50px;
+    min-width: 50px;
+    background-color: transparent;
+    top: 10px; }
+    .Menu__hamburguer img {
+      display: block; }
 
 @-moz-keyframes spin {
   from {
