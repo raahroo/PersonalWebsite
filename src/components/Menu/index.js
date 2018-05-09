@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+
 import MenuItem from './MenuItem';
 import Menu from './Menu';
+import Close from './../../svg/schließen.svg';
 
 class MenuContainer extends Component {
 
@@ -14,7 +16,6 @@ class MenuContainer extends Component {
     }
 
     handleClick(){
-        console.log("click!")
         this.setState(prevState => ({
             visible: !prevState.visible
         }));
@@ -25,16 +26,16 @@ class MenuContainer extends Component {
         <div
             className={"MenuContainer" + (this.state.visible ? '__opened' : '')}
             onClick={this.handleClick}>
-            <div className="fade" />
             <Menu ref="left" alignment="left" visible={this.state.visible}>
                 <button className="MenuContainer__button__close">
                     Close sidebar
+                    <img src={Close} alt="close" />
                 </button>
-                <MenuItem hash="first-page" label="First"/>
-                <MenuItem hash="second-page" label="Info"/>
-                <MenuItem hash="third-page" label="Some Works"/>
-                <MenuItem hash="third-page" label="Finde me"/>
-                <MenuItem hash="third-page" label="Language"/>
+                <MenuItem hash="first" label="First"/>
+                <MenuItem hash="info" label="Info"/>
+                <MenuItem hash="someworks" label="Some Works"/>
+                <MenuItem hash="findeme" label="Finde me"/>
+                <MenuItem label="Language"/>
             </Menu>
 
             </div>

@@ -4,6 +4,8 @@
   position: fixed;
   width: 100%;
   top: 0; }
+  .MenuContainer__opened img {
+    display: block !important; }
 
 .MenuContainer__button__close {
   border: 0;
@@ -13,7 +15,33 @@
   font-weight: 500;
   font-style: italic;
   font-size: 22px;
-  text-align: right; }
+  text-align: right;
+  float: right;
+  clear: both;
+  width: 100%;
+  padding: 0 15px; }
+  .MenuContainer__button__close:after {
+    position: absolute;
+    content: url("./../svg/menuzeile.svg");
+    width: 97%;
+    margin-top: 34px;
+    left: 3px;
+    margin-top: 25px; }
+  .MenuContainer__button__close:hover {
+    background-color: #000000;
+    color: #D1C9AC; }
+    .MenuContainer__button__close:hover img {
+      height: 38px;
+      width: 38px;
+      top: 6px; }
+  .MenuContainer__button__close img {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    right: -45px;
+    top: 5px;
+    display: none;
+    transition: all 0.3s; }
 
 .Menu {
   display: flex; }
@@ -21,15 +49,15 @@
     position: fixed;
     z-index: 2;
     top: 0;
-    width: 290px;
+    width: 270px;
     height: 100%;
     transition: -webkit-transform ease 250ms;
     transition: transform ease 250ms; }
     .Menu > div.left {
       background: #D1C9AC;
-      left: -290px; }
+      left: -270px; }
     .Menu > div.visible.left {
-      transform: translate3d(290px, 0, 0); }
+      transform: translate3d(270px, 0, 0); }
     .Menu > div > .MenuItem {
       display: flex;
       align-items: center;
@@ -74,7 +102,7 @@
     border: 0;
     background-color: transparent;
     outline: 0;
-    position: absolute;
+    position: fixed;
     display: block;
     min-height: 50px;
     min-width: 50px;

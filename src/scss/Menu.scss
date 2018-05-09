@@ -9,6 +9,10 @@
     position: fixed;
     width: 100%;
     top: 0;
+
+    img {
+      display: block !important;
+    }
   }
 
   &__button{
@@ -16,13 +20,48 @@
       @include transparent(transparent); 
       @include menu-item(22px); 
       text-align: right;
+      float: right;
+      clear: both;
+      width: 100%;
+      padding: 0 15px;
+
+      &:after {
+        position: absolute;
+        content: url('./../svg/menuzeile.svg');
+        width: 97%;
+        margin-top: 34px;
+        left: 3px;
+        margin-top: 25px;
+      }
+
+      &:hover {
+        background-color: $black;
+        color: $beige;
+
+        img {
+          height: 38px;
+          width: 38px;
+          top: 6px;
+        }
+      }
+  
+
+      img {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        right: -45px;
+        top: 5px;
+        display: none;
+        transition: all 0.3s;
+      }
     }
   }
 }
 
 .Menu {
   display:flex;
-  $menu-width:290px;
+  $menu-width:270px;
 
   
 
@@ -95,7 +134,7 @@
   }
   &__hamburguer {
     @include transparent(transparent); 
-    position: absolute;
+    position: fixed;
     display: block;
     min-height: 50px;
     min-width: 50px;
