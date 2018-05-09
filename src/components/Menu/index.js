@@ -25,7 +25,11 @@ class MenuContainer extends Component {
         <div
             className={"MenuContainer" + (this.state.visible ? '__opened' : '')}
             onClick={this.handleClick}>
+            <div className="fade" />
             <Menu ref="left" alignment="left" visible={this.state.visible}>
+                <button className="MenuContainer__button__close">
+                    Close sidebar
+                </button>
                 <MenuItem hash="first-page" label="First"/>
                 <MenuItem hash="second-page" label="Info"/>
                 <MenuItem hash="third-page" label="Some Works"/>

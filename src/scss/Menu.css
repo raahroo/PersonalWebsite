@@ -1,11 +1,23 @@
 .MenuContainer__opened {
   background: rgba(0, 0, 0, 0.6);
-  height: 100%; }
+  height: 100%;
+  position: fixed;
+  width: 100%; }
+
+.MenuContainer__button__close {
+  border: 0;
+  background-color: transparent;
+  outline: 0;
+  line-height: 60px;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 22px;
+  text-align: right; }
 
 .Menu {
   display: flex; }
   .Menu > div {
-    position: absolute;
+    position: fixed;
     z-index: 2;
     top: 0;
     width: 290px;
@@ -22,13 +34,18 @@
       align-items: center;
       margin: 0;
       padding: 10px 15px;
-      border-bottom: solid 1px #555;
       cursor: pointer;
       color: #000000;
       line-height: 60px;
       font-weight: 500;
       font-style: italic;
       font-size: 22px; }
+      .Menu > div > .MenuItem:after {
+        position: absolute;
+        content: url("./../svg/linie.svg");
+        width: 97%;
+        margin-top: 34px;
+        left: 0; }
       .Menu > div > .MenuItem span {
         padding: 0 0 0 15px; }
       .Menu > div > .MenuItem:hover {
@@ -54,11 +71,12 @@
         animation-timing-function: linear; }
   .Menu__hamburguer {
     border: 0;
+    background-color: transparent;
+    outline: 0;
     position: absolute;
     display: block;
     min-height: 50px;
     min-width: 50px;
-    background-color: transparent;
     top: 10px; }
     .Menu__hamburguer img {
       display: block; }

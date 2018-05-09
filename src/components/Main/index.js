@@ -1,11 +1,12 @@
 import React, { Component, } from 'react';
 import Line from './../../svg/linie.svg';
-
+import logo from './../../logo.svg';
 class Main extends Component {
   render() {
     return (
       <div className="Main container">
         <header>
+          <img src={logo} className="App-logo" alt="logo" />
           <img src={Line} alt="Linie" />
           <h4 className="Main__presentation">Collection of Works and Revelant Information</h4>
           <p className="Main__von">from one</p>

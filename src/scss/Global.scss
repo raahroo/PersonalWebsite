@@ -1,0 +1,12 @@
+@mixin transparent($transp) {
+    border: 0;
+    background-color: $transp;
+    outline: 0;
+}
+
+@mixin menu-item($fsize){
+    line-height: 60px;
+    font-weight: 500;
+    font-style: italic;
+    font-size: $fsize;
+}
