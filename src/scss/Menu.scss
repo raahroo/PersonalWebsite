@@ -8,6 +8,7 @@
     height: 100%;
     position: fixed;
     width: 100%;
+    top: 0;
   }
 
   &__button{
@@ -55,10 +56,10 @@
 
       &:after{
         position: absolute;
-        content: url('./../svg/linie.svg');
+        content: url('./../svg/menuzeile.svg');
         width: 97%;
         margin-top: 34px;
-        left: 0;
+        left: 3px;
       }
 
       span {
