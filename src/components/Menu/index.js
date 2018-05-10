@@ -36,6 +36,8 @@ class MenuContainer extends Component {
                 <MenuItem hash="someworks" label="Some Works"/>
                 <MenuItem hash="findeme" label="Finde me"/>
                 <MenuItem label="Language"/>
+                <span>Deustch</span>
+                <span>English</span>
             </Menu>
 
             </div>

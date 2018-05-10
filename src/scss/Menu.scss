@@ -93,6 +93,7 @@
       color: $black;
       @include menu-item(22px); 
 
+    
       &:after{
         position: absolute;
         content: url('./../svg/menuzeile.svg');
@@ -107,7 +108,8 @@
 
       &:hover {
         color:$beige;
-        background-color: $black; 
+        background-color: $black;
+        text-decoration: none;
       }
 
       .icon{

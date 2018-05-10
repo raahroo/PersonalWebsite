@@ -3,7 +3,7 @@ import Line from './../../svg/linie.svg';
 class FindeMe extends Component {
   render() {
     return (
-      <div className="FindeMe container">
+      <div id="findeme" className="FindeMe container">
         <div className="Section">
           <img src={Line} alt="Linie" />
           <h4 className="FindeMe__presentation">Collection of Works and Revelant Information</h4>

@@ -4,7 +4,7 @@ import logo from './../../logo.svg';
 class Main extends Component {
   render() {
     return (
-      <div className="Main container">
+      <div id="first" className="Main container">
         <header>
           <img src={logo} className="App-logo" alt="logo" />
           <img src={Line} alt="Linie" />
