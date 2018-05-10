@@ -1,5 +1,8 @@
 import React, { Component, } from 'react';
+import { Grid, Row, Col } from 'react-bootstrap';
+import MainGrid from './main-grid';
 import Line from './../../svg/linie.svg';
+import Js from './../../svg/jslogo.svg';
 import logo from './../../logo.svg';
 class Main extends Component {
   render() {
@@ -20,6 +23,7 @@ class Main extends Component {
             Parallel to this, I never left the area of Web Development.
           </p>
         </header>
+        <MainGrid />
       </div>
     );
   }
