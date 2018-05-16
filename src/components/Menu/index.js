@@ -39,7 +39,6 @@ class MenuContainer extends Component {
                 <span>Deustch</span>
                 <span>English</span>
             </Menu>
-
             </div>
         );
     }
