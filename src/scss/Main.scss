@@ -1,6 +1,8 @@
 @import "./Colors.scss";
 
 .Main {
+    padding: 20px 0;
+
     &__von {
         display: inline-block;
         position: relative;  
@@ -53,5 +55,6 @@
         font-style: italic;
         font-size: 14px;
         font-weight: 600;
+        margin-bottom: 50px;
     }
 }

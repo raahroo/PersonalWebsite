@@ -1,14 +1,12 @@
 import React, { Component, } from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
-import Line from './../../svg/linie.svg';
 import Js from './../../svg/jslogo.svg';
-import logo from './../../logo.svg';
 import Structure from './../../svg/lexical.svg';
 
 class MainGrid extends Component {
   render() {
     return (
-        <Grid className="MainGrid container">
+        <Grid id="info" className="MainGrid container">
             <Row className="show-grid">
                 <Col xs={12} md={3}>
                     <div className="MainGrid__box">

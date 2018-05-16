@@ -1,14 +1,12 @@
 import React, { Component, } from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';
 import MainGrid from './main-grid';
 import Line from './../../svg/linie.svg';
-import Js from './../../svg/jslogo.svg';
 import logo from './../../logo.svg';
 class Main extends Component {
   render() {
     return (
-      <div id="first" className="Main container">
-        <header>
+      <section id="first" className="Main container">
+        <header className="container">
           <img src={logo} className="App-logo" alt="logo" />
           <img src={Line} alt="Linie" />
           <h4 className="Main__presentation">Collection of Works and Revelant Information</h4>
@@ -24,7 +22,7 @@ class Main extends Component {
           </p>
         </header>
         <MainGrid />
-      </div>
+      </section>
     );
   }
 }
