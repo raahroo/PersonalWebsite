@@ -11,16 +11,16 @@ class Home extends Component {
     super();
     this.state={
       languages: Languages,
-      actualLanguage: 0,
+      currentLanguage: 0,
     }
   }
 
   setLanguage(language){
     console.log( 'a linguagem é' + language);
-    if(language == 0){
-      this.setState({actualLanguage: 0})
+    if(language === 0){
+      this.setState({currentLanguage: 0})
     } else {
-      this.setState({actualLanguage: 1})
+      this.setState({currentLanguage: 1})
     }
   }
 
@@ -30,7 +30,7 @@ class Home extends Component {
            <div>
             <button onClick={() => this.setLanguage(0)}>Deustch</button>
             <button onClick={() => this.setLanguage(1)}>English</button>
-            <p>{this.state.actualLanguage}</p>
+            <p>{this.state.currentLanguage}</p>
           </div>
             <Main data={this.state}/>
             <SomeWorks data={this.state} />

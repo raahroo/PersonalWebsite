@@ -5,6 +5,7 @@ import logo from './../../logo.svg';
 class Main extends Component {
   render() {
     console.log(this.props, 'main');
+    var { currentLanguage, languages } = this.props.data;
     return (
       <section id="first" className="Main container">
         <header className="container">
@@ -21,7 +22,7 @@ class Main extends Component {
             graduated in Web Design and Graphic in 2011.
             Parallel to this, I never left the area of Web Development.
           </p>
-          <p>{this.props.data.languages[this.props.data.actualLanguage].greeting}</p>
+          <p>{languages[currentLanguage].greeting}</p>
         </header>
         <MainGrid />
       </section>
