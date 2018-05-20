@@ -8,11 +8,14 @@
 
 body {
   font-family: 'Cormorant Garamond', serif;
+  background-image: url('./../texture/texture.jpg');
+  background-attachment: fixed;
+  background-color: $beige-transp;
 }
 
 .App {
   text-align: center;
-  background: $beige;
+  background-color: $beige-transp;
 }
 
 .App-logo {

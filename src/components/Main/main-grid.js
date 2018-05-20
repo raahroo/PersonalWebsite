@@ -9,8 +9,8 @@ class MainGrid extends Component {
         <Grid id="info" className="MainGrid container">
             <Row className="show-grid">
                 <Col xs={12} md={3}>
-                    <div className="MainGrid__box">
-                        <div className="MainGrid__box__intern">
+                    <div className="Section__box">
+                        <div className="Section__box__intern">
                             <Row>
                                 <Col xs={6} md={12}>
                                     <img src={Js} alt="JavaScript" />
@@ -19,7 +19,7 @@ class MainGrid extends Component {
                                     <h1>91,5%</h1>
                                 </Col>
                             </Row>
-                            <Row className="MainGrid__box__negative">
+                            <Row className="Section__box__negative">
                                 <Col xs={12}>
                                     <p>of Web uses JavaScript</p>
                                 </Col>
@@ -28,9 +28,9 @@ class MainGrid extends Component {
                     </div>
                 </Col>
                 <Col xs={12} md={3}>
-                    <div className="MainGrid__box">
-                        <div className="MainGrid__box__intern">
-                            <Row className="MainGrid__box__negative">
+                    <div className="Section__box">
+                        <div className="Section__box__intern">
+                            <Row className="Section__box__negative">
                                 <Col xs={12}>
                                     <p>Amount of available JS Frameworks</p>
                                 </Col>
@@ -50,8 +50,8 @@ class MainGrid extends Component {
                     </div>
                 </Col>
                 <Col xs={12} md={6}>
-                    <div className="MainGrid__box">
-                        <div className="MainGrid__box__intern">
+                    <div className="Section__box">
+                        <div className="Section__box__intern">
                             <Row>
                                 <Col xs={12}>
                                     <p>Lexical Structure of JavaScript.</p>
@@ -62,7 +62,7 @@ class MainGrid extends Component {
                                     <img src={Structure} alt="Structure" />
                                 </Col>
                             </Row>
-                            <Row className="MainGrid__box__negative">
+                            <Row className="Section__box__negative">
                                 <Col xs={6}>
                                     <h1>1995</h1>
                                 </Col>

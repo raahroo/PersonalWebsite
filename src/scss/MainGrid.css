@@ -1,15 +1,22 @@
-.MainGrid__box {
-  border: 1px solid #000000;
-  margin: 5px 0;
-  padding: 10px; }
-  .MainGrid__box__intern {
-    border: 1px solid #000000;
-    padding: 0 20px; }
-  .MainGrid__box img {
-    max-width: 200px;
-    margin: 20px; }
-  .MainGrid__box__negative {
-    background: #000000;
-    color: #D1C9AC;
-    margin-left: -21px;
-    margin-right: -21px; }
+/* .MainGrid__box {
+    border: 1px solid $black;
+    margin: 5px 0;
+    padding: 10px;
+
+    &__intern {
+        border: 1px solid #000000;
+        padding: 0 20px;
+    }
+
+    img {
+        max-width: 200px;
+        margin: 20px;
+    }
+
+    &__negative {
+        background: $black;
+        color: $beige;
+        margin-left: -21px;
+        margin-right: -21px;
+    }
+} */

@@ -1,3 +1,21 @@
+.Section__box {
+  border: 0.3rem solid transparent;
+  border-image: url("./../svg/randlinie.svg") 49%;
+  margin: 5px 0;
+  padding: 10px; }
+  .Section__box__intern {
+    border: 0.3rem solid transparent;
+    border-image: url("./../svg/randlinie.svg") 40%;
+    padding: 0 20px; }
+  .Section__box img {
+    max-width: 200px;
+    margin: 20px; }
+  .Section__box__negative {
+    background: #000000;
+    color: #D1C9AC;
+    margin-left: -21px;
+    margin-right: -21px; }
+
 .MenuContainer__opened {
   background: rgba(0, 0, 0, 0.6);
   height: 100%;
