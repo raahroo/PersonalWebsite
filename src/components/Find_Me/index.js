@@ -10,7 +10,7 @@ import { Row, Col } from 'react-bootstrap';
 class FindeMe extends Component {
   render() {
     return (
-      <div id="findeme" className="FindeMe container">
+      <div id="findme" className="FindeMe container">
         <div className="Section">
           <img src={Line} alt="Linie" />
           <h1 className="FindeMe__bigTitle"><img src={FindMeImg} alt="Find me" /></h1>
