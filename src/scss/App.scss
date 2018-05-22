@@ -8,14 +8,15 @@
 
 body {
   font-family: 'Cormorant Garamond', serif;
-  background-image: url('./../texture/texture.jpg');
+  background:linear-gradient( $beige-transp 100%, $beige-transp 100%),url('./../texture/texture.jpg');
+  -moz-box-shadow: inset 0 0 200px $shadow;
+  -webkit-box-shadow: inset 0 0 200px $shadow;
+  box-shadow: inset 0 0 200px $shadow;
   background-attachment: fixed;
-  background-color: $beige-transp;
 }
 
 .App {
   text-align: center;
-  background-color: $beige-transp;
 }
 
 .App-logo {
