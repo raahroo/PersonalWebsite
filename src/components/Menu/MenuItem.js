@@ -23,11 +23,13 @@ class MenuItem extends Component{
     render(){
         return(
             <Link smooth to={'#' + this.props.hash} 
-                className="MenuItem" onMouseOver={this.mouseOver.bind(this)} 
+                className={this.props.mobile ? "MenuItem" : "MenuItem--desktop" } onMouseOver={this.mouseOver.bind(this)} 
                 onMouseOut={this.mouseOut.bind(this)}>
-                { this.state.hover ? 
-                    <img src={iconBeige} className="MenuItem icon" alt="icon" /> :
-                    <img src={iconBlack} className="MenuItem icon" alt="icon" />
+                { this.props.mobile ?
+                    this.state.hover ?
+                        <img src={iconBeige} className="MenuItem icon" alt="icon" /> :
+                        <img src={iconBlack} className="MenuItem icon" alt="icon" />
+                    : <span></span>
                 }
                 <span>{this.props.label}</span>
             </Link>

@@ -6,10 +6,12 @@ import Hamburguer from './../../svg/hamburguer.svg';
     render() {
         return (
             <div className="Menu container">
-                <button className="Menu__hamburguer" 
-                    onClick={this.props.handleClick}>
-                    <img src={Hamburguer} className="MenuItem icon" alt="icon" />
-                </button>
+                { this.props.mobile && 
+                    <button className="Menu__hamburguer" 
+                        onClick={this.props.handleClick}>
+                        <img src={Hamburguer} className="MenuItem icon" alt="icon" />
+                    </button>
+                }
                 <div className={(this.props.visible ? "visible " : "" ) + this.props.alignment}>
                     {this.props.children}
                 </div>

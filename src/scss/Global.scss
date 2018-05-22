@@ -19,11 +19,12 @@
     border-image: url('./../svg/randlinie.svg') 49%;
     margin: 5px 0;
     padding: 10px;
-
+    
     &__intern {
         border: 0.3rem solid transparent;
         border-image: url('./../svg/randlinie.svg') 40%;
         padding: 0 20px;
+        position: relative;
     }
 
     img {
@@ -31,10 +32,31 @@
         margin: 20px;
     }
 
-    &__negative {
+    &__negativebottom {
         background: $black;
         color: $beige;
         margin-left: -21px;
         margin-right: -21px;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+
+    &__negativetop {
+        background: $black;
+        color: $beige;
+        margin-left: -21px;
+        margin-right: -21px;
+        position: absolute;
+        width: 100%;
+        top: 0;
+    }
+}
+
+// Responsive
+
+@media only screen and (min-width: 1225px) {
+    .Section__box__intern {
+        min-height: 380px;
     }
 }

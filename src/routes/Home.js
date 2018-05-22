@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MediaQuery from 'react-responsive';
 import MenuContainer from './../components/Menu/';
 import Main from './../components/Main/';
 import SomeWorks from './../components/Some_Works/';
@@ -27,15 +28,16 @@ class Home extends Component {
     render() {
       return (
         <div className="App">
-           <div>
-            <button onClick={() => this.setLanguage(0)}>Deustch</button>
-            <button onClick={() => this.setLanguage(1)}>English</button>
-            <p>{this.state.currentLanguage}</p>
-          </div>
+            <MediaQuery query="(min-width: 1224px)">
+              <div className="App__language">
+                <button className="App__language--button" onClick={() => this.setLanguage(0)}>Deustch</button>
+                <button className="App__language--button" onClick={() => this.setLanguage(1)}>English</button>
+              </div>
+            </MediaQuery>
             <Main data={this.state}/>
             <SomeWorks data={this.state} />
             <FindMe data={this.state}/>
-            <MenuContainer data={this.state}/>
+            <MenuContainer data={this.state} />
         </div>
       );
     }

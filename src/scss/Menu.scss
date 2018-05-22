@@ -1,20 +1,23 @@
 @import "./Colors.scss";
 @import "./Global.scss";
+@import "./Functions.scss";
 
 
 .MenuContainer {
-  &__opened {
-    background: rgba(0,0,0,0.6);
-    height: 100%;
-    position: fixed;
-    width: 100%;
-    top: 0;
+  @media only screen and (max-width: 1224px) {
+    &__opened {
+      background: rgba(0,0,0,0.6);
+      height: 100%;
+      position: fixed;
+      width: 100%;
+      top: 0;
 
-    img {
-      display: block !important;
+      img {
+        display: block !important;
+      }
     }
   }
-
+  
   &__button{
     &__close {
       @include transparent(transparent); 
@@ -62,16 +65,34 @@
 .Menu {
   display:flex;
   $menu-width:270px;
-
-  
+ 
+  @media only screen and (min-width: 1225px) {
+    text-align: left;
+  }
 
   >div {
+    background: linear-gradient($beige 40%, rgba(211,209,172, 0));
+    -webkit-box-shadow: inset 0px 31px 58px -3px $shadow;
+    -moz-box-shadow: inset 0px 31px 58px -3px $shadow;
+    box-shadow: inset 0px 31px 58px -3px $shadow;
+    -webkit-box-shadow: inset 0px 31px 58px -14px $shadow;
+    -moz-box-shadow: inset 0px 31px 58px -14px $shadow;
+    box-shadow: inset 0px 31px 58px -14px $shadow;
     position: fixed;
     z-index:2;
     top:0;
-    width:$menu-width; 
     height:100%; 
 
+    @media only screen and (max-width: 1224px) {
+      width:$menu-width; 
+    }
+
+    @media only screen and (min-width: 1225px) {
+      width: 100%;
+      left: 0;
+      height: 120px;
+    }  
+    
     transition:(-webkit-transform ease 250ms); 
     transition:(transform ease 250ms);
 
@@ -94,7 +115,7 @@
       @include menu-item(22px); 
 
     
-      &:after{
+      &:after {
         position: absolute;
         content: url('./../svg/menuzeile.svg');
         width: 97%;
@@ -112,7 +133,7 @@
         text-decoration: none;
       }
 
-      .icon{
+      .icon {
         max-width: 50px;
         -webkit-animation-name: spin;
         -webkit-animation-duration: 8000ms;
@@ -132,6 +153,27 @@
         animation-iteration-count: infinite;
         animation-timing-function: linear;
       }
+    }
+
+    .MenuItem--desktop{
+      display: inline;
+      color: $black;
+      line-height: 80px;
+      @include responsive-font-size(1.6rem);
+      padding: 0 20px;
+      font-style: italic;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .code {
+      @include responsive-font-size(1.8rem);
+      padding: 0 20px;
+      color: $black;
+      line-height: 80px;
+      font-style: normal;
+      font-family: 'Anton', sans-serif;
     }
   }
   &__hamburguer {

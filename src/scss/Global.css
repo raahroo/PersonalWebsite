@@ -6,12 +6,28 @@
   .Section__box__intern {
     border: 0.3rem solid transparent;
     border-image: url("./../svg/randlinie.svg") 40%;
-    padding: 0 20px; }
+    padding: 0 20px;
+    position: relative; }
   .Section__box img {
     max-width: 200px;
     margin: 20px; }
-  .Section__box__negative {
+  .Section__box__negativebottom {
     background: #000000;
     color: #D1C9AC;
     margin-left: -21px;
-    margin-right: -21px; }
+    margin-right: -21px;
+    position: absolute;
+    width: 100%;
+    bottom: 0; }
+  .Section__box__negativetop {
+    background: #000000;
+    color: #D1C9AC;
+    margin-left: -21px;
+    margin-right: -21px;
+    position: absolute;
+    width: 100%;
+    top: 0; }
+
+@media only screen and (min-width: 1225px) {
+  .Section__box__intern {
+    min-height: 380px; } }

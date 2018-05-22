@@ -4,7 +4,6 @@ import Line from './../../svg/linie.svg';
 import logo from './../../logo.svg';
 class Main extends Component {
   render() {
-    console.log(this.props, 'main');
     var { currentLanguage, languages } = this.props.data;
     return (
       <section id="first" className="Main container">
@@ -19,7 +18,6 @@ class Main extends Component {
           <img src={Line} alt="Linie" />
           <p className="Main__biographie">{languages[currentLanguage].presentation}
           </p>
-          <p>{languages[currentLanguage].greeting}</p>
         </header>
         <MainGrid />
       </section>
