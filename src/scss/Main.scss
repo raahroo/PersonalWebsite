@@ -1,4 +1,5 @@
 @import "./Colors.scss";
+@import "./Functions.scss";
 
 .Main {
     padding: 20px 0;
@@ -36,6 +37,7 @@
         padding: 0;
         margin: 5px;
         font-family: 'Anton', sans-serif;
+        @include responsive-font-size(7rem);
     }
 
     &__presentation{
