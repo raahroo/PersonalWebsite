@@ -13,10 +13,14 @@ class MainGrid extends Component {
                         <div className="Section__box__intern">
                             <Row>
                                 <Col xs={6} md={12}>
-                                    <img src={Js} alt="JavaScript" />
+                                    <img className="Section__box__js" src={Js} alt="JavaScript" />  
                                 </Col>
                                 <Col xs={6} md={12}>
-                                    <h1 className="MainGrid__first--h1">91,5%</h1>
+                                    <div className="Section__box__middle">
+                                        <div className="Section__box__middle--intern">
+                                            <h1 className="MainGrid__first--h1">91,5%</h1>
+                                        </div>
+                                    </div>
                                 </Col>
                             </Row>
                             <Row className="Section__box__negativebottom">
@@ -30,20 +34,20 @@ class MainGrid extends Component {
                 <Col xs={12} md={3}>
                     <div className="Section__box">
                         <div className="Section__box__intern">
-                            <Row className="Section__box__negativetop">
+                            <Row>
                                 <Col xs={12}>
-                                    <p>Amount of available JS Frameworks</p>
+                                    <p className="MainGrid__second--first">Amount of available JS Frameworks</p>
                                 </Col>
                                 <Col xs={12}>
-                                    <h1>56</h1>
+                                    <h1 className="MainGrid__second--h1">56</h1>
                                 </Col>
                             </Row>
                             <Row>
-                                <Col xs={12}>
-                                    <p>Top 3 advantages of using JavaScript:</p>
-                                    <p>- Fast for the end user</p>
-                                    <p>- No compilation needed</p>
-                                    <p>- Easy to debug and test</p>
+                                <Col xs={12} className="Section__box__bottom">
+                                    <p className="MainGrid__second--paragraph">Top 3 advantages of using JavaScript:</p>
+                                    <p className="MainGrid__second--paragraph">- Fast for the end user</p>
+                                    <p className="MainGrid__second--paragraph">- No compilation needed</p>
+                                    <p className="MainGrid__second--paragraph">- Easy to debug and test</p>
                                 </Col>
                             </Row>
                         </div>
@@ -54,7 +58,7 @@ class MainGrid extends Component {
                         <div className="Section__box__intern">
                             <Row>
                                 <Col xs={12}>
-                                    <p>Lexical Structure of JavaScript.</p>
+                                    <p className="MainGrid__third--intro">Lexical Structure of JavaScript.</p>
                                 </Col>
                             </Row>
                             <Row>
@@ -64,10 +68,10 @@ class MainGrid extends Component {
                             </Row>
                             <Row className="Section__box__negativebottom">
                                 <Col xs={6}>
-                                    <h1>1995</h1>
+                                    <h1 className="MainGrid__third--h1">1995</h1>
                                 </Col>
                                 <Col xs={6}>
-                                    <p>JavaScript has been launched.</p>
+                                    <p className="MainGrid__third--paragraph">JavaScript has been launched.</p>
                                 </Col>
                             </Row>
                         </div>

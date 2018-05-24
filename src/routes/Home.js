@@ -12,7 +12,7 @@ class Home extends Component {
     super();
     this.state={
       languages: Languages,
-      currentLanguage: 0,
+      currentLanguage: 1,
     }
   }
 

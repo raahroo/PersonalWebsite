@@ -32,11 +32,14 @@ class FindeMe extends Component {
             </Col>
           </Row>
           <Row>
-            <Col xs={12} md={6}>
+            <Col xs={12} md={4}>
               <img src={Twitter} alt={"Twitter"} />
             </Col>
-            <Col xs={12} md={6}>
-            <img src={LinkedIn} alt={"LinkedIn"} />
+            <Col xs={12} md={4}>
+              <img src={LinkedIn} alt={"LinkedIn"} />
+            </Col>
+            <Col xs={12} md={4}>
+              <p>raissa.developer@gmail.com</p>
             </Col>
           </Row>
         </div>

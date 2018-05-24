@@ -2,15 +2,111 @@
 @import "./Functions.scss";
 
 .MainGrid {
-    &__first{
-        &--h1{
+    &__first {
+        &--h1 {
             padding: 0;
             margin: 0;
+            font-weight: 500;
+            transition: all 0.3s;
+            
             @include responsive-font-size(6rem);
         }
         &--paragraph {
-            @include responsive-font-size(1.5rem);
+            @include responsive-font-size(1.6rem);
             padding: 10px;
         }
     }
+
+    &__second {
+        &--first {
+            padding: 0;
+            margin: 15px 0 0px 0;
+            @include responsive-font-size(2rem);
+        }
+        &--h1 {
+            padding: 0;
+            margin: 0;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+    }
+
+    &__third {
+        &--intro {
+            padding: 0;
+            margin: 0;
+            @include responsive-font-size(2rem);
+            padding: 20px 10px 10px 10px;
+        }
+
+        &--h1 {
+            padding: 0;
+            margin: 0;
+            @include responsive-font-size(6rem);
+            padding: 10px;
+        }
+        &--paragraph {
+            @include responsive-font-size(1.8rem);
+            padding: 10px;
+            line-height: 85px;
+            margin: 0;
+        }
+    }
 } 
+
+//Responsive
+
+.MainGrid__first--h1 {
+    @media only screen and (max-width: $phone) {
+        @include responsive-font-size(9rem);
+    }
+
+    @media only screen and (min-width: $tablet) {
+        @include responsive-font-size(7rem);
+    }
+
+    @media only screen and (min-width: $laptop) {
+        @include responsive-font-size(5.3rem);
+    }
+
+    @media only screen and (min-width: $desktop) {
+        @include responsive-font-size(8rem);
+    }
+}
+
+
+.MainGrid__second--h1 {
+    @media only screen and (max-width: $phone) {
+        @include responsive-font-size(10rem);
+    }
+
+    @media only screen and (min-width: $tablet) {
+        @include responsive-font-size(7rem);
+    }
+
+    @media only screen and (min-width: $laptop) {
+        @include responsive-font-size(8rem);
+    }
+
+    @media only screen and (min-width: $desktop) {
+        @include responsive-font-size(10rem);
+    }
+}
+
+.MainGrid__second--paragraph{
+    @media only screen and (max-width: $phone) {
+        @include responsive-font-size(2rem);
+    }
+
+    @media only screen and (max-width: $tablet) {
+        @include responsive-font-size(1.8rem);
+    }
+
+    @media only screen and (max-width: $laptop) {
+        @include responsive-font-size(1.6rem);
+    }
+
+    @media only screen and (min-width: $desktop) {
+        @include responsive-font-size(1.8rem);
+    }
+}

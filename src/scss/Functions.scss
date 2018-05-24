@@ -195,3 +195,10 @@ $enable-responsive-font-sizes: true !default;
 @mixin responsive-font-size($fs, $important: false) {
   @include rfs($fs, $important);
 }
+
+
+//Responsive Screen Sizes
+$phone: 767px;
+$tablet: 768px;
+$laptop: 992px;
+$desktop: 1200px;

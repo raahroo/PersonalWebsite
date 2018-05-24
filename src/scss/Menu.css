@@ -2,15 +2,14 @@
   border: 0.3rem solid transparent;
   border-image: url("./../svg/randlinie.svg") 49%;
   margin: 5px 0;
-  padding: 10px; }
+  padding: 10px;
+  position: relative; }
   .Section__box__intern {
     border: 0.3rem solid transparent;
     border-image: url("./../svg/randlinie.svg") 40%;
     padding: 0 20px;
-    position: relative; }
-  .Section__box img {
-    max-width: 200px;
-    margin: 20px; }
+    position: relative;
+    min-height: 280px; }
   .Section__box__negativebottom {
     background: #000000;
     color: #D1C9AC;
@@ -27,10 +26,41 @@
     position: absolute;
     width: 100%;
     top: 0; }
+  .Section__box__bottom {
+    position: absolute;
+    width: 100%;
+    bottom: 0; }
+  .Section__box__js {
+    max-width: 160px;
+    margin: 30px 0; }
 
-@media only screen and (min-width: 1225px) {
+@media only screen and (max-width: 768px) {
   .Section__box__intern {
-    min-height: 380px; } }
+    min-height: 230px; }
+  .Section__box__js {
+    margin: 30px 0 0 0; }
+  .Section__box__middle {
+    min-height: 160px; } }
+
+@media only screen and (min-width: 768px) {
+  .Section__box__intern {
+    min-height: 280px; } }
+
+@media only screen and (min-width: 992px) {
+  .Section__box__intern {
+    min-height: 400px; } }
+
+@media only screen and (max-width: 992px) {
+  .Section__box__middle {
+    position: relative;
+    min-height: 180px; }
+  .Section__box__middle--intern {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); } }
 
 @media only screen and (max-width: 1224px) {
   .MenuContainer__opened {

@@ -1,5 +1,5 @@
 @import "./Colors.scss";
-
+@import "./Functions.scss";
 
 @mixin transparent($transp) {
     border: 0;
@@ -19,17 +19,14 @@
     border-image: url('./../svg/randlinie.svg') 49%;
     margin: 5px 0;
     padding: 10px;
+    position: relative;
     
     &__intern {
         border: 0.3rem solid transparent;
         border-image: url('./../svg/randlinie.svg') 40%;
         padding: 0 20px;
         position: relative;
-    }
-
-    img {
-        max-width: 200px;
-        margin: 20px;
+        min-height: 280px;
     }
 
     &__negativebottom {
@@ -51,12 +48,62 @@
         width: 100%;
         top: 0;
     }
+
+    &__bottom  {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+
+    &__js {
+        max-width: 160px;
+        margin: 30px 0;
+    }
+  
 }
 
 // Responsive
 
-@media only screen and (min-width: 1225px) {
+@media only screen and (max-width: $tablet) {
     .Section__box__intern {
-        min-height: 380px;
+        min-height: 230px;
+    }
+
+    .Section__box__js {
+        margin: 30px 0 0 0;
+    }
+
+    .Section__box__middle {
+        min-height: 160px;
     }
 }
+
+@media only screen and (min-width: $tablet) {
+    .Section__box__intern {
+        min-height: 280px;
+    }
+}
+
+@media only screen and (min-width: $laptop) {
+    .Section__box__intern {
+        min-height: 400px;
+    }
+}
+
+@media only screen and (max-width: $laptop) {
+    .Section__box__middle {
+        position: relative;
+        min-height: 180px;
+    }
+
+    .Section__box__middle--intern {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) 
+
+    }
+}
+

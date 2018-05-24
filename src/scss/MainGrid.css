@@ -1,14 +1,141 @@
 .MainGrid__first--h1 {
   padding: 0;
   margin: 0;
+  font-weight: 500;
+  transition: all 0.3s;
   font-size: 6rem; }
   @media (max-width: 1200px) {
     .MainGrid__first--h1 {
       font-size: calc(2rem + 5.33333vw) ; } }
 
 .MainGrid__first--paragraph {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   padding: 10px; }
   @media (max-width: 1200px) {
     .MainGrid__first--paragraph {
-      font-size: calc(1.1rem + 0.53333vw) ; } }
+      font-size: calc(1.12rem + 0.64vw) ; } }
+
+.MainGrid__second--first {
+  padding: 0;
+  margin: 15px 0 0px 0;
+  font-size: 2rem; }
+  @media (max-width: 1200px) {
+    .MainGrid__second--first {
+      font-size: calc(1.2rem + 1.06667vw) ; } }
+
+.MainGrid__second--h1 {
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s;
+  font-weight: 500; }
+
+.MainGrid__third--intro {
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+  padding: 20px 10px 10px 10px; }
+  @media (max-width: 1200px) {
+    .MainGrid__third--intro {
+      font-size: calc(1.2rem + 1.06667vw) ; } }
+
+.MainGrid__third--h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 6rem;
+  padding: 10px; }
+  @media (max-width: 1200px) {
+    .MainGrid__third--h1 {
+      font-size: calc(2rem + 5.33333vw) ; } }
+
+.MainGrid__third--paragraph {
+  font-size: 1.8rem;
+  padding: 10px;
+  line-height: 85px;
+  margin: 0; }
+  @media (max-width: 1200px) {
+    .MainGrid__third--paragraph {
+      font-size: calc(1.16rem + 0.85333vw) ; } }
+
+@media only screen and (max-width: 767px) {
+  .MainGrid__first--h1 {
+    font-size: 9rem; } }
+  @media only screen and (max-width: 767px) and (max-width: 1200px) {
+    .MainGrid__first--h1 {
+      font-size: calc(2.6rem + 8.53333vw) ; } }
+
+@media only screen and (min-width: 768px) {
+  .MainGrid__first--h1 {
+    font-size: 7rem; } }
+  @media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .MainGrid__first--h1 {
+      font-size: calc(2.2rem + 6.4vw) ; } }
+
+@media only screen and (min-width: 992px) {
+  .MainGrid__first--h1 {
+    font-size: 5.3rem; } }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .MainGrid__first--h1 {
+      font-size: calc(1.86rem + 4.58667vw) ; } }
+
+@media only screen and (min-width: 1200px) {
+  .MainGrid__first--h1 {
+    font-size: 8rem; } }
+  @media only screen and (min-width: 1200px) and (max-width: 1200px) {
+    .MainGrid__first--h1 {
+      font-size: calc(2.4rem + 7.46667vw) ; } }
+
+@media only screen and (max-width: 767px) {
+  .MainGrid__second--h1 {
+    font-size: 10rem; } }
+  @media only screen and (max-width: 767px) and (max-width: 1200px) {
+    .MainGrid__second--h1 {
+      font-size: calc(2.8rem + 9.6vw) ; } }
+
+@media only screen and (min-width: 768px) {
+  .MainGrid__second--h1 {
+    font-size: 7rem; } }
+  @media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .MainGrid__second--h1 {
+      font-size: calc(2.2rem + 6.4vw) ; } }
+
+@media only screen and (min-width: 992px) {
+  .MainGrid__second--h1 {
+    font-size: 8rem; } }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .MainGrid__second--h1 {
+      font-size: calc(2.4rem + 7.46667vw) ; } }
+
+@media only screen and (min-width: 1200px) {
+  .MainGrid__second--h1 {
+    font-size: 10rem; } }
+  @media only screen and (min-width: 1200px) and (max-width: 1200px) {
+    .MainGrid__second--h1 {
+      font-size: calc(2.8rem + 9.6vw) ; } }
+
+@media only screen and (max-width: 767px) {
+  .MainGrid__second--paragraph {
+    font-size: 2rem; } }
+  @media only screen and (max-width: 767px) and (max-width: 1200px) {
+    .MainGrid__second--paragraph {
+      font-size: calc(1.2rem + 1.06667vw) ; } }
+
+@media only screen and (max-width: 768px) {
+  .MainGrid__second--paragraph {
+    font-size: 1.8rem; } }
+  @media only screen and (max-width: 768px) and (max-width: 1200px) {
+    .MainGrid__second--paragraph {
+      font-size: calc(1.16rem + 0.85333vw) ; } }
+
+@media only screen and (max-width: 992px) {
+  .MainGrid__second--paragraph {
+    font-size: 1.6rem; } }
+  @media only screen and (max-width: 992px) and (max-width: 1200px) {
+    .MainGrid__second--paragraph {
+      font-size: calc(1.12rem + 0.64vw) ; } }
+
+@media only screen and (min-width: 1200px) {
+  .MainGrid__second--paragraph {
+    font-size: 1.8rem; } }
+  @media only screen and (min-width: 1200px) and (max-width: 1200px) {
+    .MainGrid__second--paragraph {
+      font-size: calc(1.16rem + 0.85333vw) ; } }
