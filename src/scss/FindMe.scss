@@ -1,0 +1,74 @@
+@import "./Functions.scss";
+@import "./Colors.scss";
+
+.FindMe {
+    &__octo {
+        margin: 30px auto;
+        text-align: center;
+
+        .img-responsive {
+            margin: 0 auto;
+        }
+    }
+
+    &__octo:before {
+        position: absolute;
+        content: "Git Hub";
+        top: 12%;
+        left: 16%;
+        @include responsive-font-size(1.8rem);
+        font-style: italic;
+    }
+
+    &__octo:after {
+        position: absolute;
+        content: "";
+        height: 2px;
+        left: 20%;
+        top: 40%;
+        width: 150px;
+        border-top: 2px dotted;
+        -webkit-transform: rotate(25deg);
+        -ms-transform: rotate(25deg);
+        transform: rotate(60deg);
+    }
+
+    &__profile {
+        margin: 30px auto;
+        text-align: center;
+
+        .img-responsive {
+            margin: 0 auto;
+        }
+       
+        &:before {
+            position: absolute;
+            content: "xx";
+            top: 12%;
+            right: 5%;
+            @include responsive-font-size(1.8rem);
+            font-style: italic;
+        }
+
+        &:after {
+            position: absolute;
+            content: "";
+            height: 2px;
+            right: 0%;
+            top: 40%;
+            width: 150px;
+            border-top: 2px dotted;
+            transform: rotate(-60deg);
+        }
+    }
+
+    &__negative{
+        background: $black;
+        color: $beige;
+        min-height: 80px;
+    }
+
+    &__social {
+        max-width: 250px;
+    }
+}

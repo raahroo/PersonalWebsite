@@ -25,13 +25,12 @@ export default class WorksSlider extends React.Component{
                             <Col xs={12} md={6}>
                                 <div style={{ backgroundImage: `url('${work.image}')` }} />
                                 <h1>{work.title}</h1>
-                                <img src={work.image} alt={work.title} />
+                                <img className="WorksSlider__img" src={work.image} alt={work.title} />
                             </Col>
                             <Col xs={12} md={6}>
                                 <h1>{work.language}</h1>
                                 <p>{work.paragraph}</p>
                             </Col>
-                        
                         </Row>
                     </div>
                 )}

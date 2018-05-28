@@ -496,6 +496,77 @@
     .MainGrid__second--paragraph {
       font-size: calc(1.16rem + 0.85333vw) ; } }
 
+.slick-next {
+  right: 0px; }
+
+.slick-prev {
+  left: 0px; }
+
+.WorksSlider__img {
+  max-width: 150px; }
+
+.FindMe__octo {
+  margin: 30px auto;
+  text-align: center; }
+  .FindMe__octo .img-responsive {
+    margin: 0 auto; }
+
+.FindMe__octo:before {
+  position: absolute;
+  content: "Git Hub";
+  top: 12%;
+  left: 16%;
+  font-size: 1.8rem;
+  font-style: italic; }
+  @media (max-width: 1200px) {
+    .FindMe__octo:before {
+      font-size: calc(1.16rem + 0.85333vw) ; } }
+
+.FindMe__octo:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  left: 20%;
+  top: 40%;
+  width: 150px;
+  border-top: 2px dotted;
+  -webkit-transform: rotate(25deg);
+  -ms-transform: rotate(25deg);
+  transform: rotate(60deg); }
+
+.FindMe__profile {
+  margin: 30px auto;
+  text-align: center; }
+  .FindMe__profile .img-responsive {
+    margin: 0 auto; }
+  .FindMe__profile:before {
+    position: absolute;
+    content: "xx";
+    top: 12%;
+    right: 5%;
+    font-size: 1.8rem;
+    font-style: italic; }
+    @media (max-width: 1200px) {
+      .FindMe__profile:before {
+        font-size: calc(1.16rem + 0.85333vw) ; } }
+  .FindMe__profile:after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    right: 0%;
+    top: 40%;
+    width: 150px;
+    border-top: 2px dotted;
+    transform: rotate(-60deg); }
+
+.FindMe__negative {
+  background: #000000;
+  color: #D1C9AC;
+  min-height: 80px; }
+
+.FindMe__social {
+  max-width: 250px; }
+
 body {
   font-family: 'Cormorant Garamond', serif;
   background: linear-gradient(rgba(211, 209, 172, 0.5) 100%, rgba(211, 209, 172, 0.5) 100%), url("./../texture/texture.jpg");
