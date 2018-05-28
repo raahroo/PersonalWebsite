@@ -1,7 +1,7 @@
 import React, { Component, } from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import Js from './../../svg/jslogo.svg';
-import Structure from './../../svg/lexical.svg';
+
 
 class MainGrid extends Component {
   render() {
@@ -13,7 +13,9 @@ class MainGrid extends Component {
                         <div className="Section__box__intern">
                             <Row>
                                 <Col xs={6} md={12}>
-                                    <img className="Section__box__js" src={Js} alt="JavaScript" />  
+                                    <div>
+                                        <img className="Section__box__js" src={Js} alt="JavaScript" />  
+                                    </div>
                                 </Col>
                                 <Col xs={6} md={12}>
                                     <div className="Section__box__middle">
@@ -58,12 +60,9 @@ class MainGrid extends Component {
                         <div className="Section__box__intern">
                             <Row>
                                 <Col xs={12}>
-                                    <p className="MainGrid__third--intro">Lexical Structure of JavaScript.</p>
-                                </Col>
-                            </Row>
-                            <Row>
-                                <Col xs={12}>
-                                    <img src={Structure} alt="Structure" />
+                                    <div className="Section__box__middle">
+                                        <svg id="graphic"/>
+                                    </div>
                                 </Col>
                             </Row>
                             <Row className="Section__box__negativebottom">

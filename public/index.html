@@ -22,14 +22,69 @@
     <title>Raissa Hohenester</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+    <!-- include polyfills for custom event and Symbol (for IE) -->
+    <script src="https://unpkg.com/babel-polyfill@6.26.0/dist/polyfill.js"></script>
+    <script src="https://unpkg.com/custom-event-polyfill@0.3.0/custom-event-polyfill.js"></script>
+
+    <!-- use babel so that we can use arrow functions and other goodness in this block! -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script src="https://unpkg.com/d3@4.6.0"></script>
+    <script src="https://unpkg.com/d3fc@12.1.0"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.18.0/d3-legend.min.js"></script>
+    <style>
+      body {
+        font: 14px sans-serif;
+      }
+        
+      .chart-label {
+        font-size: 25px;
+      }
+        
+      .y-axis-label {
+        white-space: nowrap;
+      }
+      
+      #bubble-chart .legend {
+        position: absolute;
+        bottom: 40px;
+        right: 0;
+        left: auto;
+        width: 170px;
+        height: 110px;
+      }
+      
+      #bubble-chart {
+        position: relative;
+        height: 480px;
+      }
+      
+      #bubble-chart .point {
+        stroke: transparent;
+      }
+      
+      #bubble-chart text.label {
+        stroke: none;
+        fill: #000;
+        font: 12px sans-serif;
+      }
+      
+      .container {
+        position: relative;
+      }
+        
+      #legend {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      </style>
   </head>
   <body>
     <noscript>
@@ -46,5 +101,53 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script type='text/babel'>
+      var dataset = [1, 2, 3, 4, 5];
+
+      var svgWidth = 500, svgHeight = 300, barPadding = 5;
+
+      var barWidth = svgWidth / dataset.length;
+
+      var svg = d3.select('#graphic')
+          .attr("width", svgWidth)
+          .attr("height", svgHeight);
+
+      var yScale = d3.scaleLinear()
+        .domain([0, d3.max(dataset)])
+        .range([0, svgHeight]);
+          
+      var barChart = svg.selectAll("rect")
+          .data(dataset)
+          .enter()
+          .append("rect")
+          .attr("y", function(d) {
+              return svgHeight - yScale(d)
+          })
+          .attr("height", function(d) { 
+            return yScale(d); 
+          })
+          .attr("width", barWidth - barPadding)
+          .attr("class", "bar")
+          .attr("transform", function (d, i) {
+              var translate = [barWidth * i, 0]; 
+              return "translate("+ translate +")";
+          });
+
+        var text = svg.selectAll("text")
+          .data(dataset)
+          .enter()
+          .append("text")
+          .text(function(d) {
+              return d;
+          })
+          .attr("y", function(d, i) {
+              return svgHeight - d - 2;
+          })
+          .attr("x", function(d, i) {
+              return barWidth * i;
+          })
+          .attr("fill", "#A64C38");
+    </script>
   </body>
+
 </html>
