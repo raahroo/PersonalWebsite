@@ -42,13 +42,13 @@
         &--h1 {
             padding: 0;
             margin: 0;
-            @include responsive-font-size(6rem);
+            @include responsive-font-size(5rem);
             padding: 10px;
         }
         &--paragraph {
             @include responsive-font-size(1.8rem);
             padding: 10px;
-            line-height: 85px;
+            line-height: 62px;
             margin: 0;
         }
     }
@@ -108,5 +108,16 @@
 
     @media only screen and (min-width: $desktop) {
         @include responsive-font-size(1.8rem);
+    } 
+}
+
+.MainGrid__third--paragraph{
+    @media only screen and (max-width: $small-phone) {
+        line-height: 23px;
     }
+}
+
+#graphic {
+    filter: sepia(1);
+    opacity: 0.8;
 }

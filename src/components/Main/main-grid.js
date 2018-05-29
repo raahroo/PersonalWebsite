@@ -57,20 +57,21 @@ class MainGrid extends Component {
                 </Col>
                 <Col xs={12} md={6}>
                     <div className="Section__box">
-                        <div className="Section__box__intern">
+                        <div className="Section__box__intern last">
                             <Row>
                                 <Col xs={12}>
                                     <div className="Section__box__middle">
+                                        <p className="MainGrid__third--intro">Most used JavaScript Frameworks</p>
                                         <svg id="graphic"/>
                                     </div>
                                 </Col>
                             </Row>
                             <Row className="Section__box__negativebottom">
                                 <Col xs={6}>
-                                    <h1 className="MainGrid__third--h1">1995</h1>
+                                    <h1 className="MainGrid__third--h1">2018</h1>
                                 </Col>
                                 <Col xs={6}>
-                                    <p className="MainGrid__third--paragraph">JavaScript has been launched.</p>
+                                    <p className="MainGrid__third--paragraph">Source: indeed.com</p>
                                 </Col>
                             </Row>
                         </div>

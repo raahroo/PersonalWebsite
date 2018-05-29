@@ -75,6 +75,10 @@
     .Section__box__middle {
         min-height: 160px;
     }
+
+    .last {
+        min-height: 380px !important;
+    }
 }
 
 @media only screen and (min-width: $phone) and (max-width: $tablet){
@@ -89,12 +93,16 @@
     .Section__box__middle {
         min-height: 160px;
     }
+
+    .last {
+        min-height: 410px !important;
+    }
 }
 
 
 @media only screen and (min-width: $laptop) {
     .Section__box__intern {
-        min-height: 400px;
+        min-height: 410px;
     }
 }
 
@@ -113,6 +121,10 @@
         margin-right: -50%;
         transform: translate(-50%, -50%) 
 
+    }
+
+    .last {
+        min-height: 410px !important;
     }
 }
 

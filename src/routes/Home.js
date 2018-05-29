@@ -30,8 +30,12 @@ class Home extends Component {
         <div className="App">
             <MediaQuery query="(min-width: 1224px)">
               <div className="App__language">
-                <button className="App__language--button" onClick={() => this.setLanguage(0)}>Deustch</button>
-                <button className="App__language--button" onClick={() => this.setLanguage(1)}>English</button>
+                <button className="App__language--button" 
+                  onClick={() => this.setLanguage(0)}>Deustch
+                </button>
+                <button className="App__language--button" 
+                  onClick={() => this.setLanguage(1)}>English
+                </button>
               </div>
             </MediaQuery>
             <Main data={this.state}/>
