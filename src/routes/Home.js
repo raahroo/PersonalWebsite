@@ -39,6 +39,7 @@ class Home extends Component {
               </div>
             </MediaQuery>
             <Main data={this.state}/>
+            <SomeWorks data={this.state}/>
             <FindMe data={this.state}/>
             <MenuContainer data={this.state} />
         </div>

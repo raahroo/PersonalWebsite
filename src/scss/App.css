@@ -50,7 +50,11 @@
   .Section__title--background {
     background: url("./../png/streifen.png") no-repeat;
     min-height: 160px;
-    padding: 15px; }
+    padding: 15px;
+    margin-bottom: 50px; }
+
+.Section__negativeLeft {
+  background: linear-gradient(90deg, #000000 50%, transparent 50%); }
 
 .negative {
   background-color: #000000;
@@ -390,7 +394,11 @@
   .Section__title--background {
     background: url("./../png/streifen.png") no-repeat;
     min-height: 160px;
-    padding: 15px; }
+    padding: 15px;
+    margin-bottom: 50px; }
+
+.Section__negativeLeft {
+  background: linear-gradient(90deg, #000000 50%, transparent 50%); }
 
 .negative {
   background-color: #000000;
@@ -615,8 +623,40 @@
 .slick-prev {
   left: 0px; }
 
+.slick-dots {
+  height: 50px;
+  top: -80px; }
+  .slick-dots .slick-active {
+    background: rgba(0, 0, 0, 0.3);
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px; }
+    .slick-dots .slick-active button:before {
+      color: transparent !important; }
+  .slick-dots li {
+    width: 50px;
+    height: 50px;
+    margin: 0 20px; }
+    .slick-dots li button {
+      background-color: transparent; }
+      .slick-dots li button:before {
+        width: 50px;
+        height: 50px;
+        color: transparent;
+        line-height: 50px; }
+    .slick-dots li:before {
+      content: url("./../svg/werkzeuge.svg");
+      width: 50px;
+      height: 50px; }
+
 .WorksSlider__img {
-  max-width: 150px; }
+  max-width: 150px;
+  margin: 30px auto; }
+
+.slick-slider {
+  min-height: 400px; }
+  .slick-slider div {
+    outline: 0; }
 
 .FindMe {
   padding: 150px 0 0 0; }
@@ -681,6 +721,9 @@
     @media (max-width: 1200px) {
       .FindMe__mail {
         font-size: calc(1.2rem + 1.06667vw) ; } }
+
+.SomeWorks {
+  padding: 150px 0 0 0; }
 
 body {
   font-family: 'Cormorant Garamond', serif;

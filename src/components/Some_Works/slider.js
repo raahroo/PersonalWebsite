@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-import ImageWork from './../../svg/werkzeuge.svg';
+import ImageWork from './../../svg/werkzeuge_beige.svg';
 import {Col, Row} from 'react-bootstrap';
 
 export default class WorksSlider extends React.Component{
@@ -13,9 +13,9 @@ export default class WorksSlider extends React.Component{
             slidestoScroll: 1
         };
         var content = [
-            { title: 'first work', language: 'PHP', image: ImageWork, paragraph: 'Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor' },
-            { title: 'second work', language: 'JS', image: ImageWork, paragraph: 'Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor' },
-            { title: 'third work', language: 'Python', image: ImageWork, paragraph: 'Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor' }
+            { language: 'PHP', image: ImageWork, paragraph: 'Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolorLorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolorLorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolorLorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolorLorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolorLorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolorLorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor' },
+            { language: 'JS', image: ImageWork, paragraph: 'Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor' },
+            { language: 'Python', image: ImageWork, paragraph: 'Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor' }
         ];
         return(
             <Slider {...settings}>
@@ -23,8 +23,6 @@ export default class WorksSlider extends React.Component{
                     <div key={index}>
                         <Row >
                             <Col xs={12} md={6}>
-                                <div style={{ backgroundImage: `url('${work.image}')` }} />
-                                <h1>{work.title}</h1>
                                 <img className="WorksSlider__img" src={work.image} alt={work.title} />
                             </Col>
                             <Col xs={12} md={6}>

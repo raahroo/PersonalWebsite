@@ -74,7 +74,11 @@
             background:url('./../png/streifen.png') no-repeat;
             min-height: 160px;
             padding: 15px;
+            margin-bottom: 50px;
         }
+    }
+    &__negativeLeft {
+        background: linear-gradient(90deg, $black 50%, transparent  50%);
     }
 }
 

@@ -64,7 +64,7 @@ class MenuContainer extends Component {
                 <Menu>
                     <span className="code">{"<RaissaHohenester />"}</span>
                     <MenuItem hash="first" label="First"/>
-                    {/*<MenuItem hash="someworks" label="Some Works"/>*/}
+                    <MenuItem hash="someworks" label="Some Works"/>
                     <MenuItem hash="findme" label="Find me"/>
                 </Menu>
             </MediaQuery>

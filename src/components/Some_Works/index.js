@@ -9,12 +9,17 @@ class SomeWorks extends Component {
       <div id="someworks" className="SomeWorks container">
         <div className="Section">
           <img src={Line} alt="Linie" />
-          <h1 className="Main__bigTitle">
-            Some Works
-          </h1>
-          <img src={Line} alt="Linie" />
+          <div className="container Section__title--background">
+            <h1 className="Section__title">
+              Some Works
+            </h1>
+          </div>
           <div className="container">
-            <WorkSlider />
+            <div className="Section__box">
+              <div className="Section__box__intern Section__negativeLeft">
+                <WorkSlider />
+              </div>
+            </div>
           </div>
         </div>
       </div>
