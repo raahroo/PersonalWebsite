@@ -51,12 +51,20 @@
     padding: 15px;
     margin-bottom: 50px; }
 
-.Section__negativeLeft {
-  background: linear-gradient(90deg, #000000 50%, transparent 50%); }
-
 .negative {
   background-color: #000000;
   color: #D1C9AC; }
+
+.ink {
+  width: 600px;
+  height: 338px;
+  margin: 2% auto;
+  background: url("./../png/tintentropfen.png") left center;
+  animation: play 2s steps(51) infinite; }
+
+@keyframes play {
+  100% {
+    background-position: -30600px; } }
 
 @media only screen and (max-width: 767px) {
   .Section__box__intern {
@@ -120,3 +128,7 @@
 @media only screen and (min-width: 1200px) {
   .Content {
     padding: 80px 0 0 0; } }
+
+@media only screen and (min-width: 1200px) {
+  .Section__negativeLeft {
+    background: linear-gradient(90deg, transparent 50%, #000000 50%); } }

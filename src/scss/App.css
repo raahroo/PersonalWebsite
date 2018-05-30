@@ -53,12 +53,20 @@
     padding: 15px;
     margin-bottom: 50px; }
 
-.Section__negativeLeft {
-  background: linear-gradient(90deg, #000000 50%, transparent 50%); }
-
 .negative {
   background-color: #000000;
   color: #D1C9AC; }
+
+.ink {
+  width: 600px;
+  height: 338px;
+  margin: 2% auto;
+  background: url("./../png/tintentropfen.png") left center;
+  animation: play 2s steps(51) infinite; }
+
+@keyframes play {
+  100% {
+    background-position: -30600px; } }
 
 @media only screen and (max-width: 767px) {
   .Section__box__intern {
@@ -122,6 +130,10 @@
 @media only screen and (min-width: 1200px) {
   .Content {
     padding: 80px 0 0 0; } }
+
+@media only screen and (min-width: 1200px) {
+  .Section__negativeLeft {
+    background: linear-gradient(90deg, transparent 50%, #000000 50%); } }
 
 @media only screen and (max-width: 1224px) {
   .MenuContainer__opened {
@@ -245,6 +257,24 @@
         animation-duration: 8000ms;
         animation-iteration-count: infinite;
         animation-timing-function: linear; }
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
     .Menu > div .MenuItem--desktop {
       display: inline;
       color: #000000;
@@ -278,24 +308,6 @@
     top: 10px; }
     .Menu__hamburguer img {
       display: block; }
-
-@-moz-keyframes spin {
-  from {
-    -moz-transform: rotate(0deg); }
-  to {
-    -moz-transform: rotate(360deg); } }
-
-@-webkit-keyframes spin {
-  from {
-    -webkit-transform: rotate(0deg); }
-  to {
-    -webkit-transform: rotate(360deg); } }
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
 
 .Main {
   padding: 75px 0; }
@@ -397,12 +409,20 @@
     padding: 15px;
     margin-bottom: 50px; }
 
-.Section__negativeLeft {
-  background: linear-gradient(90deg, #000000 50%, transparent 50%); }
-
 .negative {
   background-color: #000000;
   color: #D1C9AC; }
+
+.ink {
+  width: 600px;
+  height: 338px;
+  margin: 2% auto;
+  background: url("./../png/tintentropfen.png") left center;
+  animation: play 2s steps(51) infinite; }
+
+@keyframes play {
+  100% {
+    background-position: -30600px; } }
 
 @media only screen and (max-width: 767px) {
   .Section__box__intern {
@@ -466,6 +486,10 @@
 @media only screen and (min-width: 1200px) {
   .Content {
     padding: 80px 0 0 0; } }
+
+@media only screen and (min-width: 1200px) {
+  .Section__negativeLeft {
+    background: linear-gradient(90deg, transparent 50%, #000000 50%); } }
 
 .MainGrid__first--h1 {
   padding: 0;
@@ -618,10 +642,18 @@
   opacity: 0.8; }
 
 .slick-next {
-  right: 0px; }
+  right: 0px;
+  display: block;
+  height: 100%;
+  z-index: 9;
+  width: 50px; }
 
 .slick-prev {
-  left: 0px; }
+  left: 0px;
+  display: block;
+  height: 100%;
+  z-index: 9;
+  width: 50px; }
 
 .slick-dots {
   height: 50px;
@@ -636,7 +668,41 @@
   .slick-dots li {
     width: 50px;
     height: 50px;
-    margin: 0 20px; }
+    margin: 0 20px;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 8000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 8000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 8000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    animation-name: spin;
+    animation-duration: 8000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; }
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
     .slick-dots li button {
       background-color: transparent; }
       .slick-dots li button:before {
@@ -650,13 +716,36 @@
       height: 50px; }
 
 .WorksSlider__img {
-  max-width: 150px;
+  max-width: 100%;
   margin: 30px auto; }
 
-.slick-slider {
-  min-height: 400px; }
-  .slick-slider div {
-    outline: 0; }
+.WorksSlider__box {
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  resize: both;
+  overflow: auto; }
+
+.slick-slider div {
+  outline: 0; }
+  @media only screen and (min-width: 1200px) {
+    .slick-slider div {
+      min-height: 400px; } }
+
+@media only screen and (min-width: 1200px) {
+  .WorksSlider__h1 {
+    color: #D1C9AC; }
+  .WorksSlider__paragraph {
+    color: #D1C9AC; } }
+
+@media only screen and (max-width: 767px) {
+  .slick-dots li {
+    width: 30px;
+    height: 30px;
+    margin: 0 8px; } }
 
 .FindMe {
   padding: 150px 0 0 0; }

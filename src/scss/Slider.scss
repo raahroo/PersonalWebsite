@@ -1,12 +1,21 @@
 @import "./Colors.scss";
+@import "./Functions.scss";
+
 .slick-next {
     right: 0px;
+    display: block;
+    height: 100%;
+    z-index: 9;
+    width: 50px;
 }
 
 .slick-prev {
     left: 0px;
+    display: block;
+    height: 100%;
+    z-index: 9;
+    width: 50px;
 }
-
 
 .slick-dots {
     height: 50px;
@@ -32,6 +41,7 @@
         width: 50px;
         height: 50px;
         margin: 0 20px;
+        @include animation; 
 
         button {
             background-color:transparent;
@@ -47,22 +57,57 @@
             content: url('./../svg/werkzeuge.svg');
             width: 50px;
             height: 50px;
+            
         }
     }
 }
 
-.WorksSlider__img {
-    max-width: 150px;
-    margin: 30px auto;
+.WorksSlider {
+    &__img {
+        max-width: 100%;
+        margin: 30px auto;
+    }
+
+    &__box {
+        height: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        resize: both;
+        overflow: auto;
+    }
 }
 
-
 //Responsive 
-.slick-slider{
-  min-height: 400px;
 
+.slick-slider{
   div {
-    outline: 0;   
+    outline: 0;     
+    @media only screen and (min-width: $desktop) {
+        min-height: 400px;
+    }
   }
 }  
-    
+
+
+.WorksSlider{
+    @media only screen and (min-width: $desktop) {
+        &__h1 {
+            color: $beige;
+        }
+
+        &__paragraph {
+            color: $beige;
+        }
+    }
+}
+
+.slick-dots li {
+    @media only screen and (max-width: $phone) {
+        width: 30px;
+        height: 30px;
+        margin: 0 8px;
+    }
+}

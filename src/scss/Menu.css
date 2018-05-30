@@ -51,12 +51,20 @@
     padding: 15px;
     margin-bottom: 50px; }
 
-.Section__negativeLeft {
-  background: linear-gradient(90deg, #000000 50%, transparent 50%); }
-
 .negative {
   background-color: #000000;
   color: #D1C9AC; }
+
+.ink {
+  width: 600px;
+  height: 338px;
+  margin: 2% auto;
+  background: url("./../png/tintentropfen.png") left center;
+  animation: play 2s steps(51) infinite; }
+
+@keyframes play {
+  100% {
+    background-position: -30600px; } }
 
 @media only screen and (max-width: 767px) {
   .Section__box__intern {
@@ -120,6 +128,10 @@
 @media only screen and (min-width: 1200px) {
   .Content {
     padding: 80px 0 0 0; } }
+
+@media only screen and (min-width: 1200px) {
+  .Section__negativeLeft {
+    background: linear-gradient(90deg, transparent 50%, #000000 50%); } }
 
 @media only screen and (max-width: 1224px) {
   .MenuContainer__opened {
@@ -243,6 +255,24 @@
         animation-duration: 8000ms;
         animation-iteration-count: infinite;
         animation-timing-function: linear; }
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
     .Menu > div .MenuItem--desktop {
       display: inline;
       color: #000000;
@@ -276,21 +306,3 @@
     top: 10px; }
     .Menu__hamburguer img {
       display: block; }
-
-@-moz-keyframes spin {
-  from {
-    -moz-transform: rotate(0deg); }
-  to {
-    -moz-transform: rotate(360deg); } }
-
-@-webkit-keyframes spin {
-  from {
-    -webkit-transform: rotate(0deg); }
-  to {
-    -webkit-transform: rotate(360deg); } }
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }

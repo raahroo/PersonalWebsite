@@ -20,6 +20,7 @@ class Main extends Component {
           </p>
         </header>
         <MainGrid />
+        <div class="ink" />
       </section>
     );
   }
