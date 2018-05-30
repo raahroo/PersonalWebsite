@@ -11,18 +11,22 @@ class FindeMe extends Component {
   render() {
     return (
       <div id="findme" className="FindMe container">
-        <div className="Section">
+        <div className="Section container">
           <img src={Line} alt="Linie" />
-          <h1 className="Main__bigTitle">
-            Find Me
-          </h1>
+          <div className="container Section__title--background">
+            <h1 className="Section__title">
+              Find Me
+            </h1>
+          </div>
           <img src={Line} alt="Linie" />
           <Row>
             <Col xs={12} md={8}>
               <div className="Section__box">
                 <div className="Section__box__intern">
                   <div className="FindMe__octo">
-                    <img className="img-responsive" src={Octocat} alt={"Octocat"} />
+                    <a href="https://github.com/raahroo/" target="_blank">
+                      <img className="img-responsive" src={Octocat} alt={"Octocat"} />
+                    </a>
                   </div>
                 </div>
               </div>
@@ -39,14 +43,18 @@ class FindeMe extends Component {
           </Row>
           <Row>
             <Col xs={6} md={4}>
-              <img className="FindMe__social" src={Twitter} alt={"Twitter"} />
+              <a href="https://twitter.com/raahroo" target="_blank">
+                <img className="FindMe__social" src={Twitter} alt={"Twitter"} />
+              </a>
             </Col>
             <Col xs={6} md={4}>
-              <img className="FindMe__social" src={LinkedIn} alt={"LinkedIn"} />
+              <a href="https://www.linkedin.com/in/raissa-hohenester-40846167/" target="_blank">
+                <img className="FindMe__social" src={LinkedIn} alt={"LinkedIn"} />
+              </a>
             </Col>
             <Col xs={12} md={4}>
-              <div className="Section__box">
-                <p>raissa.developer@gmail.com</p>
+              <div className="Section__box negative">
+                <p className="Findme__mail">raissa.developer@gmail.com</p>
               </div>
             </Col>
           </Row>

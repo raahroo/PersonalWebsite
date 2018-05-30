@@ -14,52 +14,73 @@
     font-size: $fsize;
 }
 
-.Section__box {
-    border: 0.3rem solid transparent;
-    border-image: url('./../svg/randlinie.svg') 49%;
-    margin: 5px 0;
-    padding: 10px;
-    position: relative;
-    
-    &__intern {
+.Section {
+    &__box {
         border: 0.3rem solid transparent;
-        border-image: url('./../svg/randlinie.svg') 40%;
-        padding: 0 20px;
+        border-image: url('./../svg/randlinie.svg') 49%;
+        margin: 5px 0;
+        padding: 10px;
         position: relative;
-        min-height: 280px;
-    }
 
-    &__negativebottom {
-        background: $black;
+        &__intern {
+            border: 0.3rem solid transparent;
+            border-image: url('./../svg/randlinie.svg') 40%;
+            padding: 0 20px;
+            position: relative;
+            min-height: 280px;
+        }
+    
+        &__negativebottom {
+            background: $black;
+            color: $beige;
+            margin-left: -21px;
+            margin-right: -21px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    
+        &__negativetop {
+            background: $black;
+            color: $beige;
+            margin-left: -21px;
+            margin-right: -21px;
+            position: absolute;
+            width: 100%;
+            top: 0;
+        }
+    
+        &__bottom  {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    
+        &__js {
+            max-width: 160px;
+            margin: 30px 0;
+        }
+    }
+    &__title {
+        text-transform: uppercase;
+        padding: 4px;
+        margin: 5px;
+        font-family: 'Anton', sans-serif;
+        @include responsive-font-size(7rem);
+        text-align: left;
         color: $beige;
-        margin-left: -21px;
-        margin-right: -21px;
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-    }
 
-    &__negativetop {
-        background: $black;
-        color: $beige;
-        margin-left: -21px;
-        margin-right: -21px;
-        position: absolute;
-        width: 100%;
-        top: 0;
+        &--background {
+            background:url('./../png/streifen.png') no-repeat;
+            min-height: 160px;
+            padding: 15px;
+        }
     }
+}
 
-    &__bottom  {
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-    }
-
-    &__js {
-        max-width: 160px;
-        margin: 30px 0;
-    }
-  
+.negative {
+    background-color: $black;
+    color: $beige;
 }
 
 // Responsive
@@ -126,5 +147,35 @@
     .last {
         min-height: 410px !important;
     }
+
+    .Section__title--background {
+        background:url('./../png/streifen_small.png') no-repeat;
+        min-height: 160px;
+        padding: 15px;
+       
+    }
 }
 
+//Padding Section
+.Content {
+    @media only screen and (max-width: $phone) {
+        padding: 190px 0 0 0;
+        transition: all 0.3s;
+    }
+
+    @media only screen and (min-width: $phone) and (max-width: $tablet) {
+        padding: 120px 0 0 0;
+    }
+
+    @media only screen and (min-width: $tablet) and (max-width: $laptop){
+        padding: 150px 0 0 0;
+    }
+
+    @media only screen and (min-width: $laptop) and (max-width: $desktop){
+        padding: 40px 0 0 0;
+    }
+
+    @media only screen and (min-width: $desktop) {
+        padding: 80px 0 0 0;
+    }
+}

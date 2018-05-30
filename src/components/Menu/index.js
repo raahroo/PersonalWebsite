@@ -9,10 +9,13 @@ class MenuContainer extends Component {
     constructor(props){
         super(props);
         this.state = {
-            visible: false
+            visible: false,
+            currentLanguage: this.props.currentLanguage
         }
 
         this.handleClick = this.handleClick.bind(this);
+        console.log(this.props);
+        console.log(this.state, 'state');
     }
 
     handleClick(){
@@ -20,6 +23,15 @@ class MenuContainer extends Component {
             visible: !prevState.visible
         }));
     }
+
+    setLanguage(language){
+        console.log( 'a linguagem é' + language);
+        if(language === 0){
+          this.setState({currentLanguage: 0})
+        } else {
+          this.setState({currentLanguage: 1})
+        }
+      }
 
     render() {
         return (
@@ -34,18 +46,25 @@ class MenuContainer extends Component {
                     </button>
                     <MenuItem hash="first" label="First" mobile />
                     <MenuItem hash="info" label="Info" mobile/>
-                    <MenuItem hash="someworks" label="Some Works" mobile/>
+                    {/*<MenuItem hash="someworks" label="Some Works" mobile/>*/}
                     <MenuItem hash="findme" label="Find me" mobile/>
-                    <MenuItem label="Language" mobile/>
-                    <span>Deustch</span>
-                    <span>English</span>
+                    {/*<MenuItem label="Language" mobile/>    
+                    <div className="MenuContainer__language">    
+                        <a
+                            onClick={() => this.setLanguage(0)}>
+                            Deustch
+                        </a>
+                        <a onClick={() => this.setLanguage(1)}
+                            >English
+                        </a>
+                    </div>*/}
                 </Menu>
             </MediaQuery>
             <MediaQuery query="(min-width: 1225px)">
                 <Menu>
                     <span className="code">{"<RaissaHohenester />"}</span>
                     <MenuItem hash="first" label="First"/>
-                    <MenuItem hash="someworks" label="Some Works"/>
+                    {/*<MenuItem hash="someworks" label="Some Works"/>*/}
                     <MenuItem hash="findme" label="Find me"/>
                 </Menu>
             </MediaQuery>

@@ -34,6 +34,26 @@
     max-width: 160px;
     margin: 30px 0; }
 
+.Section__title {
+  text-transform: uppercase;
+  padding: 4px;
+  margin: 5px;
+  font-family: 'Anton', sans-serif;
+  font-size: 7rem;
+  text-align: left;
+  color: #D1C9AC; }
+  @media (max-width: 1200px) {
+    .Section__title {
+      font-size: calc(2.2rem + 6.4vw) ; } }
+  .Section__title--background {
+    background: url("./../png/streifen.png") no-repeat;
+    min-height: 160px;
+    padding: 15px; }
+
+.negative {
+  background-color: #000000;
+  color: #D1C9AC; }
+
 @media only screen and (max-width: 767px) {
   .Section__box__intern {
     min-height: 230px; }
@@ -70,4 +90,29 @@
     margin-right: -50%;
     transform: translate(-50%, -50%); }
   .last {
-    min-height: 410px !important; } }
+    min-height: 410px !important; }
+  .Section__title--background {
+    background: url("./../png/streifen_small.png") no-repeat;
+    min-height: 160px;
+    padding: 15px; } }
+
+@media only screen and (max-width: 767px) {
+  .Content {
+    padding: 190px 0 0 0;
+    transition: all 0.3s; } }
+
+@media only screen and (min-width: 767px) and (max-width: 768px) {
+  .Content {
+    padding: 120px 0 0 0; } }
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .Content {
+    padding: 150px 0 0 0; } }
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .Content {
+    padding: 40px 0 0 0; } }
+
+@media only screen and (min-width: 1200px) {
+  .Content {
+    padding: 80px 0 0 0; } }
