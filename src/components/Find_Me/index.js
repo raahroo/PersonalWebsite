@@ -1,4 +1,4 @@
-import React, { Component, } from 'react';
+import React, { Component } from 'react';
 import Line from './../../svg/linie.svg';
 import Twitter from './../../svg/twitter.svg';
 import Octocat from './../../png/octocat.png';
@@ -54,7 +54,7 @@ class FindeMe extends Component {
             </Col>
             <Col xs={12} md={4}>
               <div className="Section__box negative">
-                <p className="Findme__mail">raissa.developer@gmail.com</p>
+                <h4 className="Findme__mail">raissa.developer@gmail.com</h4>
               </div>
             </Col>
           </Row>

@@ -3,6 +3,7 @@ import MediaQuery from 'react-responsive';
 import MenuItem from './MenuItem';
 import Menu from './Menu';
 import Close from './../../svg/schließen.svg';
+import Line from './../../svg/linie.svg';
 
 class MenuContainer extends Component {
 
@@ -46,7 +47,7 @@ class MenuContainer extends Component {
                     </button>
                     <MenuItem hash="first" label="First" mobile />
                     <MenuItem hash="info" label="Info" mobile/>
-                    {/*<MenuItem hash="someworks" label="Some Works" mobile/>*/}
+                    <MenuItem hash="someworks" label="Some Works" mobile/>
                     <MenuItem hash="findme" label="Find me" mobile/>
                     {/*<MenuItem label="Language" mobile/>    
                     <div className="MenuContainer__language">    
@@ -62,10 +63,11 @@ class MenuContainer extends Component {
             </MediaQuery>
             <MediaQuery query="(min-width: 1225px)">
                 <Menu>
-                    <span className="code">{"<RaissaHohenester />"}</span>
+                    <span className="code">{"● Raissa Hohenester"}</span>
                     <MenuItem hash="first" label="First"/>
                     <MenuItem hash="someworks" label="Some Works"/>
                     <MenuItem hash="findme" label="Find me"/>
+                    <img className="MenuContainer__line" src={Line} alt="Linie" />
                 </Menu>
             </MediaQuery>
             </div>

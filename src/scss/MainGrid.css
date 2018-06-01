@@ -10,15 +10,17 @@
 
 .MainGrid__first--paragraph {
   font-size: 1.6rem;
-  padding: 10px; }
+  padding: 10px;
+  font-style: italic; }
   @media (max-width: 1200px) {
     .MainGrid__first--paragraph {
       font-size: calc(1.12rem + 0.64vw) ; } }
 
 .MainGrid__second--first {
   padding: 0;
-  margin: 15px 0 0px 0;
-  font-size: 2rem; }
+  margin: 0px 0 0px 0;
+  font-size: 2rem;
+  font-style: italic; }
   @media (max-width: 1200px) {
     .MainGrid__second--first {
       font-size: calc(1.2rem + 1.06667vw) ; } }
@@ -33,7 +35,8 @@
   padding: 0;
   margin: 0;
   font-size: 2rem;
-  padding: 20px 10px 10px 10px; }
+  padding: 20px 10px 10px 10px;
+  font-style: italic; }
   @media (max-width: 1200px) {
     .MainGrid__third--intro {
       font-size: calc(1.2rem + 1.06667vw) ; } }
@@ -50,11 +53,27 @@
 .MainGrid__third--paragraph {
   font-size: 1.8rem;
   padding: 10px;
-  line-height: 62px;
-  margin: 0; }
+  margin: 0;
+  font-style: italic; }
   @media (max-width: 1200px) {
     .MainGrid__third--paragraph {
       font-size: calc(1.16rem + 0.85333vw) ; } }
+
+.MainGrid__third--ink {
+  position: absolute;
+  right: 20px;
+  opacity: 0.8; }
+
+.MainGrid__ink {
+  position: absolute;
+  top: -50px;
+  max-width: 100px; }
+
+.MainGrid__ink--small {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  max-width: 100px; }
 
 @media only screen and (max-width: 767px) {
   .MainGrid__first--h1 {
@@ -112,38 +131,46 @@
     .MainGrid__second--h1 {
       font-size: calc(2.8rem + 9.6vw) ; } }
 
-@media only screen and (max-width: 767px) {
-  .MainGrid__second--paragraph {
-    font-size: 2rem; } }
+.MainGrid__second--paragraph {
+  color: #000000;
+  font-style: italic; }
+  @media only screen and (max-width: 767px) {
+    .MainGrid__second--paragraph {
+      font-size: 2rem; } }
   @media only screen and (max-width: 767px) and (max-width: 1200px) {
     .MainGrid__second--paragraph {
       font-size: calc(1.2rem + 1.06667vw) ; } }
-
-@media only screen and (max-width: 768px) {
-  .MainGrid__second--paragraph {
-    font-size: 1.8rem; } }
+  @media only screen and (max-width: 768px) {
+    .MainGrid__second--paragraph {
+      font-size: 1.8rem; } }
   @media only screen and (max-width: 768px) and (max-width: 1200px) {
     .MainGrid__second--paragraph {
       font-size: calc(1.16rem + 0.85333vw) ; } }
-
-@media only screen and (max-width: 992px) {
-  .MainGrid__second--paragraph {
-    font-size: 1.6rem; } }
+  @media only screen and (max-width: 992px) {
+    .MainGrid__second--paragraph {
+      font-size: 1.6rem; } }
   @media only screen and (max-width: 992px) and (max-width: 1200px) {
     .MainGrid__second--paragraph {
       font-size: calc(1.12rem + 0.64vw) ; } }
-
-@media only screen and (min-width: 1200px) {
-  .MainGrid__second--paragraph {
-    font-size: 1.8rem; } }
+  @media only screen and (min-width: 1200px) {
+    .MainGrid__second--paragraph {
+      font-size: 1.7rem; } }
   @media only screen and (min-width: 1200px) and (max-width: 1200px) {
     .MainGrid__second--paragraph {
-      font-size: calc(1.16rem + 0.85333vw) ; } }
+      font-size: calc(1.14rem + 0.74667vw) ; } }
 
-@media only screen and (max-width: 480px) {
-  .MainGrid__third--paragraph {
-    line-height: 23px; } }
-
+/* .MainGrid__third--paragraph{
+    @media only screen and (max-width: $small-phone) {
+        line-height: 23px;
+    }
+} */
 #graphic {
   filter: sepia(1);
   opacity: 0.8; }
+
+@media only screen and (max-width: 992px) {
+  .MainGrid__ink {
+    position: absolute;
+    top: -50px;
+    max-width: 60px;
+    right: 0px; } }

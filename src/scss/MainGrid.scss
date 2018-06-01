@@ -14,14 +14,16 @@
         &--paragraph {
             @include responsive-font-size(1.6rem);
             padding: 10px;
+            font-style: italic;
         }
     }
 
     &__second {
         &--first {
             padding: 0;
-            margin: 15px 0 0px 0;
+            margin: 0px 0 0px 0;
             @include responsive-font-size(2rem);
+            font-style: italic;
         }
         &--h1 {
             padding: 0;
@@ -37,6 +39,7 @@
             margin: 0;
             @include responsive-font-size(2rem);
             padding: 20px 10px 10px 10px;
+            font-style: italic;
         }
 
         &--h1 {
@@ -45,12 +48,32 @@
             @include responsive-font-size(5rem);
             padding: 10px;
         }
+
         &--paragraph {
             @include responsive-font-size(1.8rem);
             padding: 10px;
-            line-height: 62px;
+            //line-height: 62px;
             margin: 0;
+            font-style: italic;
         }
+
+        &--ink {
+            position: absolute;
+            right: 20px;
+            opacity: 0.8;
+        }
+    }
+
+    &__ink {
+        position: absolute;
+        top: -50px;
+        max-width: 100px;
+    }
+    &__ink--small {
+        position: absolute;
+        bottom: -20px;
+        left: -20px;
+        max-width: 100px;
     }
 } 
 
@@ -93,7 +116,10 @@
     }
 }
 
-.MainGrid__second--paragraph{
+.MainGrid__second--paragraph {
+
+    color: $black;
+    font-style: italic;
     @media only screen and (max-width: $phone) {
         @include responsive-font-size(2rem);
     }
@@ -107,17 +133,26 @@
     }
 
     @media only screen and (min-width: $desktop) {
-        @include responsive-font-size(1.8rem);
+        @include responsive-font-size(1.7rem);
     } 
 }
 
-.MainGrid__third--paragraph{
+/* .MainGrid__third--paragraph{
     @media only screen and (max-width: $small-phone) {
         line-height: 23px;
     }
-}
+} */
 
 #graphic {
     filter: sepia(1);
     opacity: 0.8;
+}
+
+.MainGrid__ink {
+    @media only screen and (max-width: $laptop) {
+        position: absolute;
+        top: -50px;
+        max-width: 60px;
+        right: 0px;
+    }
 }

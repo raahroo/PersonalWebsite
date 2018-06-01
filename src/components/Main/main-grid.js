@@ -1,7 +1,12 @@
 import React, { Component, } from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
+import MediaQuery from 'react-responsive';
 import Js from './../../svg/jslogo.svg';
-
+import Doppellinie from './../../svg/doppellinie.svg';
+import BeigeLinie from './../../svg/beigelinie.svg';
+import Ink from './../../png/ink.png';
+import KleinInk from './../../png/small_ink.png';
+import InkBeige from './../../png/ink_beige.png';
 
 class MainGrid extends Component {
   render() {
@@ -15,6 +20,9 @@ class MainGrid extends Component {
                                 <Col xs={6} md={12}>
                                     <div>
                                         <img className="Section__box__js" src={Js} alt="JavaScript" />  
+                                        <MediaQuery query="(min-width: 1225px)">
+                                            <img src={Doppellinie} alt="Linie" />
+                                        </MediaQuery>
                                     </div>
                                 </Col>
                                 <Col xs={6} md={12}>
@@ -35,10 +43,18 @@ class MainGrid extends Component {
                 </Col>
                 <Col xs={12} md={3}>
                     <div className="Section__box">
-                        <div className="Section__box__intern">
+                        <div className="Section__box__intern Section__negativeTop">
                             <Row>
                                 <Col xs={12}>
+                                    <MediaQuery query="(min-width: 1225px)">
+                                        <img src={BeigeLinie} alt="BeigeLinie" />  
+                                    </MediaQuery>
                                     <p className="MainGrid__second--first">Amount of available JS Frameworks</p>
+                                    <MediaQuery query="(min-width: 1225px)">
+                                        <img src={BeigeLinie} alt="BeigeLinie" />  
+                                   </MediaQuery>
+                                    <img className="MainGrid__ink" src={Ink} alt="ink" />  
+                                   
                                 </Col>
                                 <Col xs={12}>
                                     <h1 className="MainGrid__second--h1">56</h1>
@@ -50,6 +66,7 @@ class MainGrid extends Component {
                                     <p className="MainGrid__second--paragraph">- Fast for the end user</p>
                                     <p className="MainGrid__second--paragraph">- No compilation needed</p>
                                     <p className="MainGrid__second--paragraph">- Easy to debug and test</p>
+                                    <img className="MainGrid__ink--small" src={KleinInk} alt="ink" />  
                                 </Col>
                             </Row>
                         </div>
@@ -63,6 +80,8 @@ class MainGrid extends Component {
                                     <div className="Section__box__middle">
                                         <p className="MainGrid__third--intro">Most used JavaScript Frameworks</p>
                                         <svg id="graphic"/>
+                                        <img className="MainGrid__third--ink" src={InkBeige} alt="InkBeige" />
+                                        
                                     </div>
                                 </Col>
                             </Row>
@@ -71,7 +90,9 @@ class MainGrid extends Component {
                                     <h1 className="MainGrid__third--h1">2018</h1>
                                 </Col>
                                 <Col xs={6}>
+                                    <img src={BeigeLinie} alt="BeigeLinie" />  
                                     <p className="MainGrid__third--paragraph">Source: indeed.com</p>
+                                    <img src={BeigeLinie} alt="BeigeLinie" />  
                                 </Col>
                             </Row>
                         </div>

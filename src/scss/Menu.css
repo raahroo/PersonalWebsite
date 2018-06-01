@@ -17,7 +17,8 @@
     margin-right: -21px;
     position: absolute;
     width: 100%;
-    bottom: 0; }
+    bottom: 0;
+    padding: 5px 0; }
   .Section__box__negativetop {
     background: #000000;
     color: #D1C9AC;
@@ -49,14 +50,13 @@
     background: url("./../png/streifen.png") no-repeat;
     min-height: 160px;
     padding: 15px;
-    margin-bottom: 50px; }
+    margin-bottom: 80px; }
 
-.negative {
-  background-color: #000000;
-  color: #D1C9AC; }
+.margin-20 {
+  margin: 25px 0 0 0; }
 
 .ink {
-  width: 600px;
+  width: 100%;
   height: 338px;
   margin: 2% auto;
   background: url("./../png/tintentropfen.png") left center;
@@ -66,7 +66,7 @@
   100% {
     background-position: -30600px; } }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 480px) {
   .Section__box__intern {
     min-height: 230px; }
   .Section__box__js {
@@ -76,7 +76,7 @@
   .last {
     min-height: 380px !important; } }
 
-@media only screen and (min-width: 767px) and (max-width: 768px) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
   .Section__box__intern {
     min-height: 280px; }
   .Section__box__js {
@@ -130,8 +130,26 @@
     padding: 80px 0 0 0; } }
 
 @media only screen and (min-width: 1200px) {
-  .Section__negativeLeft {
+  .Section__negativeRight {
     background: linear-gradient(90deg, transparent 50%, #000000 50%); } }
+
+@media only screen and (min-width: 1200px) {
+  .Section__negativeTop {
+    background: linear-gradient(180deg, #000000 60%, transparent 40%);
+    color: #D1C9AC; } }
+
+.negative {
+  background-color: #000000;
+  color: #D1C9AC; }
+  .negative:after {
+    position: absolute;
+    content: url("./../png/ink.png");
+    right: -25px;
+    top: -100px; }
+    @media only screen and (max-width: 767px) {
+      .negative:after {
+        right: -15px;
+        top: -200px; } }
 
 @media only screen and (max-width: 1224px) {
   .MenuContainer__opened {
@@ -181,6 +199,19 @@
 
 .MenuContainer__language {
   position: absolute; }
+
+.MenuContainer__desktop {
+  border: 1px solid red; }
+
+.MenuContainer__line {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0; }
 
 .Menu {
   display: flex; }
@@ -278,8 +309,7 @@
       color: #000000;
       line-height: 80px;
       font-size: 1.6rem;
-      padding: 0 20px;
-      font-style: italic; }
+      padding: 0 40px; }
       @media (max-width: 1200px) {
         .Menu > div .MenuItem--desktop {
           font-size: calc(1.12rem + 0.64vw) ; } }

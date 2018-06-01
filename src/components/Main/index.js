@@ -2,13 +2,14 @@ import React, { Component, } from 'react';
 import MainGrid from './main-grid';
 import Line from './../../svg/linie.svg';
 import logo from './../../logo.svg';
+
 class Main extends Component {
   render() {
     var { currentLanguage, languages } = this.props.data;
     return (
-      <section id="first" className="Main container">
+      <section className="Main container">
         <header className="container">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={logo}  id="first" className="App-logo" alt="logo" />
           <img src={Line} alt="Linie" />
           <h4 className="Main__presentation">{languages[currentLanguage].first}</h4>
           <p className="Main__von">{languages[currentLanguage].from}</p>
@@ -20,7 +21,7 @@ class Main extends Component {
           </p>
         </header>
         <MainGrid />
-        <div class="ink" />
+        <div className="container ink" />
       </section>
     );
   }

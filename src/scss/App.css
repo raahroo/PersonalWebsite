@@ -19,7 +19,8 @@
     margin-right: -21px;
     position: absolute;
     width: 100%;
-    bottom: 0; }
+    bottom: 0;
+    padding: 5px 0; }
   .Section__box__negativetop {
     background: #000000;
     color: #D1C9AC;
@@ -51,14 +52,13 @@
     background: url("./../png/streifen.png") no-repeat;
     min-height: 160px;
     padding: 15px;
-    margin-bottom: 50px; }
+    margin-bottom: 80px; }
 
-.negative {
-  background-color: #000000;
-  color: #D1C9AC; }
+.margin-20 {
+  margin: 25px 0 0 0; }
 
 .ink {
-  width: 600px;
+  width: 100%;
   height: 338px;
   margin: 2% auto;
   background: url("./../png/tintentropfen.png") left center;
@@ -68,7 +68,7 @@
   100% {
     background-position: -30600px; } }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 480px) {
   .Section__box__intern {
     min-height: 230px; }
   .Section__box__js {
@@ -78,7 +78,7 @@
   .last {
     min-height: 380px !important; } }
 
-@media only screen and (min-width: 767px) and (max-width: 768px) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
   .Section__box__intern {
     min-height: 280px; }
   .Section__box__js {
@@ -132,8 +132,26 @@
     padding: 80px 0 0 0; } }
 
 @media only screen and (min-width: 1200px) {
-  .Section__negativeLeft {
+  .Section__negativeRight {
     background: linear-gradient(90deg, transparent 50%, #000000 50%); } }
+
+@media only screen and (min-width: 1200px) {
+  .Section__negativeTop {
+    background: linear-gradient(180deg, #000000 60%, transparent 40%);
+    color: #D1C9AC; } }
+
+.negative {
+  background-color: #000000;
+  color: #D1C9AC; }
+  .negative:after {
+    position: absolute;
+    content: url("./../png/ink.png");
+    right: -25px;
+    top: -100px; }
+    @media only screen and (max-width: 767px) {
+      .negative:after {
+        right: -15px;
+        top: -200px; } }
 
 @media only screen and (max-width: 1224px) {
   .MenuContainer__opened {
@@ -183,6 +201,19 @@
 
 .MenuContainer__language {
   position: absolute; }
+
+.MenuContainer__desktop {
+  border: 1px solid red; }
+
+.MenuContainer__line {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0; }
 
 .Menu {
   display: flex; }
@@ -280,8 +311,7 @@
       color: #000000;
       line-height: 80px;
       font-size: 1.6rem;
-      padding: 0 20px;
-      font-style: italic; }
+      padding: 0 40px; }
       @media (max-width: 1200px) {
         .Menu > div .MenuItem--desktop {
           font-size: calc(1.12rem + 0.64vw) ; } }
@@ -375,7 +405,8 @@
     margin-right: -21px;
     position: absolute;
     width: 100%;
-    bottom: 0; }
+    bottom: 0;
+    padding: 5px 0; }
   .Section__box__negativetop {
     background: #000000;
     color: #D1C9AC;
@@ -407,14 +438,13 @@
     background: url("./../png/streifen.png") no-repeat;
     min-height: 160px;
     padding: 15px;
-    margin-bottom: 50px; }
+    margin-bottom: 80px; }
 
-.negative {
-  background-color: #000000;
-  color: #D1C9AC; }
+.margin-20 {
+  margin: 25px 0 0 0; }
 
 .ink {
-  width: 600px;
+  width: 100%;
   height: 338px;
   margin: 2% auto;
   background: url("./../png/tintentropfen.png") left center;
@@ -424,7 +454,7 @@
   100% {
     background-position: -30600px; } }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 480px) {
   .Section__box__intern {
     min-height: 230px; }
   .Section__box__js {
@@ -434,7 +464,7 @@
   .last {
     min-height: 380px !important; } }
 
-@media only screen and (min-width: 767px) and (max-width: 768px) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
   .Section__box__intern {
     min-height: 280px; }
   .Section__box__js {
@@ -488,8 +518,26 @@
     padding: 80px 0 0 0; } }
 
 @media only screen and (min-width: 1200px) {
-  .Section__negativeLeft {
+  .Section__negativeRight {
     background: linear-gradient(90deg, transparent 50%, #000000 50%); } }
+
+@media only screen and (min-width: 1200px) {
+  .Section__negativeTop {
+    background: linear-gradient(180deg, #000000 60%, transparent 40%);
+    color: #D1C9AC; } }
+
+.negative {
+  background-color: #000000;
+  color: #D1C9AC; }
+  .negative:after {
+    position: absolute;
+    content: url("./../png/ink.png");
+    right: -25px;
+    top: -100px; }
+    @media only screen and (max-width: 767px) {
+      .negative:after {
+        right: -15px;
+        top: -200px; } }
 
 .MainGrid__first--h1 {
   padding: 0;
@@ -503,15 +551,17 @@
 
 .MainGrid__first--paragraph {
   font-size: 1.6rem;
-  padding: 10px; }
+  padding: 10px;
+  font-style: italic; }
   @media (max-width: 1200px) {
     .MainGrid__first--paragraph {
       font-size: calc(1.12rem + 0.64vw) ; } }
 
 .MainGrid__second--first {
   padding: 0;
-  margin: 15px 0 0px 0;
-  font-size: 2rem; }
+  margin: 0px 0 0px 0;
+  font-size: 2rem;
+  font-style: italic; }
   @media (max-width: 1200px) {
     .MainGrid__second--first {
       font-size: calc(1.2rem + 1.06667vw) ; } }
@@ -526,7 +576,8 @@
   padding: 0;
   margin: 0;
   font-size: 2rem;
-  padding: 20px 10px 10px 10px; }
+  padding: 20px 10px 10px 10px;
+  font-style: italic; }
   @media (max-width: 1200px) {
     .MainGrid__third--intro {
       font-size: calc(1.2rem + 1.06667vw) ; } }
@@ -543,11 +594,27 @@
 .MainGrid__third--paragraph {
   font-size: 1.8rem;
   padding: 10px;
-  line-height: 62px;
-  margin: 0; }
+  margin: 0;
+  font-style: italic; }
   @media (max-width: 1200px) {
     .MainGrid__third--paragraph {
       font-size: calc(1.16rem + 0.85333vw) ; } }
+
+.MainGrid__third--ink {
+  position: absolute;
+  right: 20px;
+  opacity: 0.8; }
+
+.MainGrid__ink {
+  position: absolute;
+  top: -50px;
+  max-width: 100px; }
+
+.MainGrid__ink--small {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  max-width: 100px; }
 
 @media only screen and (max-width: 767px) {
   .MainGrid__first--h1 {
@@ -605,41 +672,202 @@
     .MainGrid__second--h1 {
       font-size: calc(2.8rem + 9.6vw) ; } }
 
-@media only screen and (max-width: 767px) {
-  .MainGrid__second--paragraph {
-    font-size: 2rem; } }
+.MainGrid__second--paragraph {
+  color: #000000;
+  font-style: italic; }
+  @media only screen and (max-width: 767px) {
+    .MainGrid__second--paragraph {
+      font-size: 2rem; } }
   @media only screen and (max-width: 767px) and (max-width: 1200px) {
     .MainGrid__second--paragraph {
       font-size: calc(1.2rem + 1.06667vw) ; } }
-
-@media only screen and (max-width: 768px) {
-  .MainGrid__second--paragraph {
-    font-size: 1.8rem; } }
+  @media only screen and (max-width: 768px) {
+    .MainGrid__second--paragraph {
+      font-size: 1.8rem; } }
   @media only screen and (max-width: 768px) and (max-width: 1200px) {
     .MainGrid__second--paragraph {
       font-size: calc(1.16rem + 0.85333vw) ; } }
-
-@media only screen and (max-width: 992px) {
-  .MainGrid__second--paragraph {
-    font-size: 1.6rem; } }
+  @media only screen and (max-width: 992px) {
+    .MainGrid__second--paragraph {
+      font-size: 1.6rem; } }
   @media only screen and (max-width: 992px) and (max-width: 1200px) {
     .MainGrid__second--paragraph {
       font-size: calc(1.12rem + 0.64vw) ; } }
-
-@media only screen and (min-width: 1200px) {
-  .MainGrid__second--paragraph {
-    font-size: 1.8rem; } }
+  @media only screen and (min-width: 1200px) {
+    .MainGrid__second--paragraph {
+      font-size: 1.7rem; } }
   @media only screen and (min-width: 1200px) and (max-width: 1200px) {
     .MainGrid__second--paragraph {
-      font-size: calc(1.16rem + 0.85333vw) ; } }
+      font-size: calc(1.14rem + 0.74667vw) ; } }
 
-@media only screen and (max-width: 480px) {
-  .MainGrid__third--paragraph {
-    line-height: 23px; } }
-
+/* .MainGrid__third--paragraph{
+    @media only screen and (max-width: $small-phone) {
+        line-height: 23px;
+    }
+} */
 #graphic {
   filter: sepia(1);
   opacity: 0.8; }
+
+@media only screen and (max-width: 992px) {
+  .MainGrid__ink {
+    position: absolute;
+    top: -50px;
+    max-width: 60px;
+    right: 0px; } }
+
+.Section__box {
+  border: 0.3rem solid transparent;
+  border-image: url("./../svg/randlinie.svg") 49%;
+  margin: 5px 0;
+  padding: 10px;
+  position: relative; }
+  .Section__box__intern {
+    border: 0.3rem solid transparent;
+    border-image: url("./../svg/randlinie.svg") 40%;
+    padding: 0 20px;
+    position: relative;
+    min-height: 280px; }
+  .Section__box__negativebottom {
+    background: #000000;
+    color: #D1C9AC;
+    margin-left: -21px;
+    margin-right: -21px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 5px 0; }
+  .Section__box__negativetop {
+    background: #000000;
+    color: #D1C9AC;
+    margin-left: -21px;
+    margin-right: -21px;
+    position: absolute;
+    width: 100%;
+    top: 0; }
+  .Section__box__bottom {
+    position: absolute;
+    width: 100%;
+    bottom: 0; }
+  .Section__box__js {
+    max-width: 160px;
+    margin: 30px 0; }
+
+.Section__title {
+  text-transform: uppercase;
+  padding: 4px;
+  margin: 5px;
+  font-family: 'Anton', sans-serif;
+  font-size: 7rem;
+  text-align: left;
+  color: #D1C9AC; }
+  @media (max-width: 1200px) {
+    .Section__title {
+      font-size: calc(2.2rem + 6.4vw) ; } }
+  .Section__title--background {
+    background: url("./../png/streifen.png") no-repeat;
+    min-height: 160px;
+    padding: 15px;
+    margin-bottom: 80px; }
+
+.margin-20 {
+  margin: 25px 0 0 0; }
+
+.ink {
+  width: 100%;
+  height: 338px;
+  margin: 2% auto;
+  background: url("./../png/tintentropfen.png") left center;
+  animation: play 2s steps(51) infinite; }
+
+@keyframes play {
+  100% {
+    background-position: -30600px; } }
+
+@media only screen and (max-width: 480px) {
+  .Section__box__intern {
+    min-height: 230px; }
+  .Section__box__js {
+    margin: 30px 0 0 0; }
+  .Section__box__middle {
+    min-height: 160px; }
+  .last {
+    min-height: 380px !important; } }
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .Section__box__intern {
+    min-height: 280px; }
+  .Section__box__js {
+    margin: 30px 0 0 0; }
+  .Section__box__middle {
+    min-height: 160px; }
+  .last {
+    min-height: 410px !important; } }
+
+@media only screen and (min-width: 992px) {
+  .Section__box__intern {
+    min-height: 410px; } }
+
+@media only screen and (max-width: 992px) {
+  .Section__box__middle {
+    position: relative;
+    min-height: 180px; }
+  .Section__box__middle--intern {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); }
+  .last {
+    min-height: 410px !important; }
+  .Section__title--background {
+    background: url("./../png/streifen_small.png") no-repeat;
+    min-height: 160px;
+    padding: 15px; } }
+
+@media only screen and (max-width: 767px) {
+  .Content {
+    padding: 190px 0 0 0;
+    transition: all 0.3s; } }
+
+@media only screen and (min-width: 767px) and (max-width: 768px) {
+  .Content {
+    padding: 120px 0 0 0; } }
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .Content {
+    padding: 150px 0 0 0; } }
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .Content {
+    padding: 40px 0 0 0; } }
+
+@media only screen and (min-width: 1200px) {
+  .Content {
+    padding: 80px 0 0 0; } }
+
+@media only screen and (min-width: 1200px) {
+  .Section__negativeRight {
+    background: linear-gradient(90deg, transparent 50%, #000000 50%); } }
+
+@media only screen and (min-width: 1200px) {
+  .Section__negativeTop {
+    background: linear-gradient(180deg, #000000 60%, transparent 40%);
+    color: #D1C9AC; } }
+
+.negative {
+  background-color: #000000;
+  color: #D1C9AC; }
+  .negative:after {
+    position: absolute;
+    content: url("./../png/ink.png");
+    right: -25px;
+    top: -100px; }
+    @media only screen and (max-width: 767px) {
+      .negative:after {
+        right: -15px;
+        top: -200px; } }
 
 .slick-next {
   right: 0px;
@@ -657,7 +885,8 @@
 
 .slick-dots {
   height: 50px;
-  top: -80px; }
+  top: -105px;
+  margin-bottom: 50px; }
   .slick-dots .slick-active {
     background: rgba(0, 0, 0, 0.3);
     -moz-border-radius: 100px;
@@ -728,6 +957,17 @@
   align-items: center;
   resize: both;
   overflow: auto; }
+
+.WorksSlider__link {
+  display: block;
+  background: #D1C9AC;
+  color: #000000;
+  padding: 10px;
+  max-width: 200px;
+  margin: 30px auto; }
+
+.WorksSlider__right {
+  display: block; }
 
 .slick-slider div {
   outline: 0; }

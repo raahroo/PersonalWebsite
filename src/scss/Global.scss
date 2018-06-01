@@ -71,6 +71,7 @@
             position: absolute;
             width: 100%;
             bottom: 0;
+            padding: 5px 0;
         }
     
         &__negativetop {
@@ -107,32 +108,32 @@
             background:url('./../png/streifen.png') no-repeat;
             min-height: 160px;
             padding: 15px;
-            margin-bottom: 50px;
+            margin-bottom: 80px;
         }
     }
 
 }
 
-.negative {
-    background-color: $black;
-    color: $beige;
+.margin-20 {
+    margin: 25px 0 0 0;
 }
+
 
 //Animation Ink 
 .ink {
-    width: 600px;
+    width: 100%;
     height: 338px;
     margin: 2% auto;
     background: url('./../png/tintentropfen.png') left center;
     animation: play 2s steps(51) infinite;
   }
   
-  @keyframes play {
+    @keyframes play {
       100% { background-position: -30600px; }
-  }
+    }
 
 // Responsive
-@media only screen and (max-width: $phone) {
+@media only screen and (max-width: $small-phone) {
     .Section__box__intern {
         min-height: 230px;
     }
@@ -150,7 +151,7 @@
     }
 }
 
-@media only screen and (min-width: $phone) and (max-width: $tablet){
+@media only screen and (min-width: $small-phone) and (max-width: $tablet){
     .Section__box__intern {
         min-height: 280px;
     }
@@ -228,8 +229,33 @@
     }
 }
 
-.Section__negativeLeft {
+.Section__negativeRight {
     @media only screen and (min-width: $desktop) {
         background: linear-gradient(90deg, transparent 50%, $black  50%);
     } 
+}
+
+.Section__negativeTop {
+    @media only screen and (min-width: $desktop) {
+        background: linear-gradient(180deg, $black  60%, transparent 40%);
+        color: $beige;
+    } 
+}
+
+.negative {
+    background-color: $black;
+    color: $beige;
+
+    &:after {
+        position: absolute;
+        content: url("./../png/ink.png");
+        right: -25px;
+        top: -100px;
+
+        @media only screen and (max-width: $phone) {
+            right: -15px;
+            top: -200px;
+        } 
+    }
+
 }

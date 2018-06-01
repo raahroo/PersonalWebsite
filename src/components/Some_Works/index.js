@@ -15,8 +15,8 @@ class SomeWorks extends Component {
             </h1>
           </div>
           <div className="container">
-            <div className="Section__box">
-              <div className="Section__box__intern Section__negativeLeft">
+            <div className="Section__box margin-20">
+              <div className="Section__box__intern Section__negativeRight">
                 <WorkSlider />
               </div>
             </div>

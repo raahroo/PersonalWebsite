@@ -18,7 +18,7 @@
     }
   }
   
-  &__button{
+  &__button {
     &__close {
       @include transparent(transparent); 
       @include menu-item(22px); 
@@ -61,8 +61,23 @@
     }
   }
 
-  &__language{
+  &__language {
     position: absolute;
+  }
+
+  &__desktop {
+    border: 1px solid red;
+  }
+
+  &__line {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
   }
 }
 
@@ -148,8 +163,7 @@
       color: $black;
       line-height: 80px;
       @include responsive-font-size(1.6rem);
-      padding: 0 20px;
-      font-style: italic;
+      padding: 0 40px;
       &:hover {
         text-decoration: none;
       }
