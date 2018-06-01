@@ -1,11 +1,15 @@
 import React, { Component, } from 'react';
+import { connect } from 'react-redux';
 import MainGrid from './main-grid';
 import Line from './../../svg/linie.svg';
 import logo from './../../logo.svg';
 
 class Main extends Component {
   render() {
-    var { currentLanguage, languages } = this.props.data;
+    var { languages } = this.props.data;
+    var { currentLanguage } = this.props;
+
+    console.log(this.props, 'intern');
     return (
       <section className="Main container">
         <header className="container">
@@ -27,4 +31,7 @@ class Main extends Component {
   }
 }
 
-export default Main;
+const mapStateToProps = store =>({
+  currentLanguage: store.languageState.currentLanguage
+})
+export default connect(mapStateToProps) (Main);

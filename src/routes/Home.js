@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import MediaQuery from 'react-responsive';
 import MenuContainer from './../components/Menu/';
 import Main from './../components/Main/';
@@ -17,7 +18,6 @@ class Home extends Component {
   }
 
   setLanguage(language){
-    console.log( 'a linguagem é' + language);
     if(language === 0){
       this.setState({currentLanguage: 0})
     } else {
@@ -26,6 +26,8 @@ class Home extends Component {
   }
 
     render() {
+      const { currentLanguage } = this.props;
+      console.log(this.props, 'current');
       return (
         <div className="App">
             <MediaQuery query="(min-width: 1224px)">
@@ -39,11 +41,15 @@ class Home extends Component {
               </div>
             </MediaQuery>
             <Main data={this.state}/>
-            <SomeWorks data={this.state}/>
-            <FindMe data={this.state}/>
-            <MenuContainer data={this.state} />
+            <SomeWorks />
+            <FindMe />
+            <MenuContainer/>
         </div>
       );
     }
   }
-export default Home;
+
+const mapStateToProps = store =>({
+  currentLanguage: store.languageState.currentLanguage
+})
+export default connect(mapStateToProps) (Home);
