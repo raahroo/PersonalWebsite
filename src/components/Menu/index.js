@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { deustchButton, englishButton } from '../../actions';
 import MediaQuery from 'react-responsive';
 import MenuItem from './MenuItem';
 import Menu from './Menu';
@@ -24,6 +27,7 @@ class MenuContainer extends Component {
     }
 
     render() {
+        const { currentLanguage, deustchButton, englishButton } = this.props;
         return (
         <div
             className={"MenuContainer" + (this.state.visible ? '__opened' : '')}
@@ -38,16 +42,16 @@ class MenuContainer extends Component {
                     <MenuItem hash="info" label="Info" mobile/>
                     <MenuItem hash="someworks" label="Some Works" mobile/>
                     <MenuItem hash="findme" label="Find me" mobile/>
-                    {/*<MenuItem label="Language" mobile/>    
+                   <MenuItem label="Language" mobile/>    
                     <div className="MenuContainer__language">    
                         <a
-                            onClick={() => this.setLanguage(0)}>
+                            onClick={() => deustchButton(0)}>
                             Deustch
                         </a>
-                        <a onClick={() => this.setLanguage(1)}
+                        <a onClick={() => englishButton(1)}
                             >English
                         </a>
-                    </div>*/}
+                    </div>
                 </Menu>
             </MediaQuery>
             <MediaQuery query="(min-width: 1225px)">
@@ -64,4 +68,11 @@ class MenuContainer extends Component {
     }
 }
 
-export default MenuContainer;
+const mapStateToProps = store =>({
+    currentLanguage: store.languageState.currentLanguage
+});
+
+const mapDispatchToProps = dispatch =>
+bindActionCreators({ deustchButton, englishButton }, dispatch);
+
+export default connect(mapStateToProps, mapDispatchToProps) (MenuContainer);

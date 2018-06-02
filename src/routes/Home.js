@@ -20,7 +20,6 @@ class Home extends Component {
 
     render() {
       const { currentLanguage, deustchButton, englishButton } = this.props;
-      console.log(this.props, 'current');
       return (
         <div className="App">
             <MediaQuery query="(min-width: 1224px)">
@@ -36,7 +35,7 @@ class Home extends Component {
             <Main data={this.state} currentLanguage={this.props}/>
             <SomeWorks />
             <FindMe />
-            <MenuContainer/>
+            <MenuContainer data={this.props}/>
         </div>
       );
     }
