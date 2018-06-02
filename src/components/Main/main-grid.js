@@ -10,6 +10,9 @@ import InkBeige from './../../png/ink_beige.png';
 
 class MainGrid extends Component {
   render() {
+    var { languages } = this.props;
+    var { currentLanguage } = this.props;
+    console.log(languages, 'props');
     return (
         <Grid id="info" className="MainGrid container">
             <Row className="show-grid">
@@ -35,7 +38,7 @@ class MainGrid extends Component {
                             </Row>
                             <Row className="Section__box__negativebottom">
                                 <Col xs={12}>
-                                    <p className="MainGrid__first--paragraph">of Web uses JavaScript</p>
+                                    <p className="MainGrid__first--paragraph">{languages[currentLanguage].javascript}</p>
                                 </Col>
                             </Row>
                         </div>
@@ -49,7 +52,7 @@ class MainGrid extends Component {
                                     <MediaQuery query="(min-width: 1225px)">
                                         <img src={BeigeLinie} alt="BeigeLinie" />  
                                     </MediaQuery>
-                                    <p className="MainGrid__second--first">Amount of available JS Frameworks</p>
+                                    <p className="MainGrid__second--first">{languages[currentLanguage].amount}</p>
                                     <MediaQuery query="(min-width: 1225px)">
                                         <img src={BeigeLinie} alt="BeigeLinie" />  
                                    </MediaQuery>
@@ -62,10 +65,10 @@ class MainGrid extends Component {
                             </Row>
                             <Row>
                                 <Col xs={12} className="Section__box__bottom">
-                                    <p className="MainGrid__second--paragraph">Top 3 advantages of using JavaScript:</p>
-                                    <p className="MainGrid__second--paragraph">- Fast for the end user</p>
-                                    <p className="MainGrid__second--paragraph">- No compilation needed</p>
-                                    <p className="MainGrid__second--paragraph">- Easy to debug and test</p>
+                                    <p className="MainGrid__second--paragraph">{languages[currentLanguage].advantages}</p>
+                                    <p className="MainGrid__second--paragraph">{languages[currentLanguage].ad1}</p>
+                                    <p className="MainGrid__second--paragraph">{languages[currentLanguage].ad2}</p>
+                                    <p className="MainGrid__second--paragraph">{languages[currentLanguage].ad3}</p>
                                     <img className="MainGrid__ink--small" src={KleinInk} alt="ink" />  
                                 </Col>
                             </Row>
@@ -78,7 +81,7 @@ class MainGrid extends Component {
                             <Row>
                                 <Col xs={12}>
                                     <div className="Section__box__middle">
-                                        <p className="MainGrid__third--intro">Most used JavaScript Frameworks</p>
+                                        <p className="MainGrid__third--intro">{languages[currentLanguage].graphic}</p>
                                         <svg id="graphic"/>
                                         <img className="MainGrid__third--ink" src={InkBeige} alt="InkBeige" />
                                         
@@ -91,7 +94,7 @@ class MainGrid extends Component {
                                 </Col>
                                 <Col xs={6}>
                                     <img src={BeigeLinie} alt="BeigeLinie" />  
-                                    <p className="MainGrid__third--paragraph">Source: indeed.com</p>
+                                    <p className="MainGrid__third--paragraph">{languages[currentLanguage].graphic}</p>
                                     <img src={BeigeLinie} alt="BeigeLinie" />  
                                 </Col>
                             </Row>

@@ -63,6 +63,23 @@
 
   &__language {
     position: absolute;
+    width: 100%;
+
+    &__link {
+      background: $black;
+      color: $beige;
+      width: 50%;
+      text-decoration: none;
+      display: inline-table;
+      padding: 20px 0;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: none;
+        color: $beige;
+        opacity: 0.8;
+      }
+    }
   }
 
   &__desktop {

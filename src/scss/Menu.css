@@ -198,7 +198,20 @@
     transition: all 0.3s; }
 
 .MenuContainer__language {
-  position: absolute; }
+  position: absolute;
+  width: 100%; }
+  .MenuContainer__language__link {
+    background: #000000;
+    color: #D1C9AC;
+    width: 50%;
+    text-decoration: none;
+    display: inline-table;
+    padding: 20px 0;
+    cursor: pointer; }
+    .MenuContainer__language__link:hover {
+      text-decoration: none;
+      color: #D1C9AC;
+      opacity: 0.8; }
 
 .MenuContainer__desktop {
   border: 1px solid red; }

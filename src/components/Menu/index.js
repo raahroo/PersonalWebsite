@@ -27,7 +27,7 @@ class MenuContainer extends Component {
     }
 
     render() {
-        const { currentLanguage, deustchButton, englishButton } = this.props;
+        const { deustchButton, englishButton } = this.props;
         return (
         <div
             className={"MenuContainer" + (this.state.visible ? '__opened' : '')}
@@ -45,10 +45,13 @@ class MenuContainer extends Component {
                    <MenuItem label="Language" mobile/>    
                     <div className="MenuContainer__language">    
                         <a
+                            className="MenuContainer__language__link"
                             onClick={() => deustchButton(0)}>
                             Deustch
                         </a>
-                        <a onClick={() => englishButton(1)}
+                        <a 
+                            className="MenuContainer__language__link"
+                            onClick={() => englishButton(1)}
                             >English
                         </a>
                     </div>

@@ -4,8 +4,17 @@
         "from": "von einem",
         "office": "Front-end Entwickler",
         "credits": "Layout und Code von Raissa Hohenester",
-        "presentation": "Ich bin ein Frontend-Entwickler, der in Bayern lebt und seit 2009 auf dem Arbeitsmarkt tätig ist. Ich habe HTML 2003 kennengelernt, mich mit Pixelkunst amüsiert, 2008 einen technischen Computerkurs absolviert und 2011 Web Design and Graphic absolviert. Parallel dazu habe ich den Bereich Web Development nie verlassen."
-
+        "presentation": "Ich bin ein Frontend-Entwickler, der in Bayern lebt und seit 2009 auf dem Arbeitsmarkt tätig ist. Ich habe HTML 2003 kennengelernt, mich mit Pixelkunst amüsiert, 2008 einen technischen Computerkurs absolviert und 2011 Web Design and Graphic absolviert. Parallel dazu habe ich den Bereich Web Development nie verlassen.",
+        "javascript":"von Web verwendet JavaScript",
+        "amount": "Anzahl der verfügbaren JS-Frameworks",
+        "advantages":"Die 3 wichtigsten Vorteile von JavaScript:",
+        "ad1":"- Schnell für den Endbenutzer",
+        "ad2":"- Keine Kompilierung erforderlich",
+        "ad3":"- Einfach zu debuggen und zu testen",
+        "graphic":"Meist verwendete JavaScript-Frameworks",
+        "source":"Quelle: indeed.com",
+        "works":"Einige Arbeiten",
+        "find":"Finde mich"
     },
    
 
@@ -15,8 +24,17 @@
         "from": "from one",
         "office": "Front-end Developer",
         "credits": "Layout and code by Raissa Hohenester",
-        "presentation": "I am a front-end developer living in Bavaria and have been working in the labor market since 2009. I met HTML in 2003, amused myself with pixel art, completed a technical computer course in 2008, graduated in Web Design and Graphic in 2011. Parallel to this, I never left the area of Web Development."
+        "presentation": "I am a front-end developer living in Bavaria and have been working in the labor market since 2009. I met HTML in 2003, amused myself with pixel art, completed a technical computer course in 2008, graduated in Web Design and Graphic in 2011. Parallel to this, I never left the area of Web Development.",
+        "javascript":"of Web uses JavaScript",
+        "amount": "Amount of available JS Frameworks",
+        "advantages":"Top 3 advantages of using JavaScript:",
+        "ad1":"- Fast for the end user",
+        "ad2":"- No compilation needed",
+        "ad3":"- Easy to debug and test",
+        "graphic":"Most used JavaScript Frameworks",
+        "source":"Source: indeed.com",
+        "works":"Some works",
+        "find":"Find me"
     }
-    
 
 ]

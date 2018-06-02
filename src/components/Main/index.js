@@ -22,7 +22,7 @@ class Main extends Component {
           <p className="Main__biographie">{languages[currentLanguage].presentation}
           </p>
         </header>
-        <MainGrid />
+        <MainGrid languages={languages} currentLanguage={currentLanguage}/>
         <div className="container ink" />
       </section>
     );
