@@ -23,15 +23,6 @@ class MenuContainer extends Component {
         }));
     }
 
-    setLanguage(language){
-        console.log( 'a linguagem é' + language);
-        if(language === 0){
-          this.setState({currentLanguage: 0})
-        } else {
-          this.setState({currentLanguage: 1})
-        }
-      }
-
     render() {
         return (
         <div
