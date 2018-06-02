@@ -7,9 +7,7 @@ import logo from './../../logo.svg';
 class Main extends Component {
   render() {
     var { languages } = this.props.data;
-    var { currentLanguage } = this.props;
-
-    console.log(this.props, 'intern');
+    var { currentLanguage } = this.props.currentLanguage;
     return (
       <section className="Main container">
         <header className="container">
@@ -31,7 +29,5 @@ class Main extends Component {
   }
 }
 
-const mapStateToProps = store =>({
-  currentLanguage: store.languageState.currentLanguage
-})
-export default connect(mapStateToProps) (Main);
+
+export default Main;

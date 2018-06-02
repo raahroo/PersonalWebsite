@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { deustchButton, englishButton } from '../actions';
 import MediaQuery from 'react-responsive';
 import MenuContainer from './../components/Menu/';
 import Main from './../components/Main/';
@@ -13,34 +15,25 @@ class Home extends Component {
     super();
     this.state={
       languages: Languages,
-      currentLanguage: 1,
-    }
-  }
-
-  setLanguage(language){
-    if(language === 0){
-      this.setState({currentLanguage: 0})
-    } else {
-      this.setState({currentLanguage: 1})
     }
   }
 
     render() {
-      const { currentLanguage } = this.props;
+      const { currentLanguage, deustchButton, englishButton } = this.props;
       console.log(this.props, 'current');
       return (
         <div className="App">
             <MediaQuery query="(min-width: 1224px)">
               <div className="App__language">
                 <button className="App__language--button" 
-                  onClick={() => this.setLanguage(0)}>Deustch
+                  onClick={() => deustchButton(0)}>Deustch
                 </button>
                 <button className="App__language--button" 
-                  onClick={() => this.setLanguage(1)}>English
+                  onClick={() => englishButton(1)}>English
                 </button>
               </div>
             </MediaQuery>
-            <Main data={this.state}/>
+            <Main data={this.state} currentLanguage={this.props}/>
             <SomeWorks />
             <FindMe />
             <MenuContainer/>
@@ -51,5 +44,9 @@ class Home extends Component {
 
 const mapStateToProps = store =>({
   currentLanguage: store.languageState.currentLanguage
-})
-export default connect(mapStateToProps) (Home);
+});
+
+const mapDispatchToProps = dispatch =>
+  bindActionCreators({ deustchButton, englishButton }, dispatch);
+
+export default connect(mapStateToProps, mapDispatchToProps) (Home);

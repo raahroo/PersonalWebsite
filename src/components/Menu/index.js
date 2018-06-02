@@ -15,8 +15,6 @@ class MenuContainer extends Component {
         }
 
         this.handleClick = this.handleClick.bind(this);
-        console.log(this.props);
-        console.log(this.state, 'state');
     }
 
     handleClick(){

@@ -9,14 +9,16 @@ export const languageReducer = (state = initialState, action)=> {
         case 'CLICK_UPDATE_DEUTSCH':
             return {
                 ...state,
-                currentLanguage: action.currentLanguage
+                currentLanguage: action.currentLanguage,
             };
+            console.log(action.currentLanguage, 'CLICK_UPDATE_DEUTSCH');
 
         case 'CLICK_UPDATE_ENGLISH':
         return {
             ...state,
             currentLanguage: action.currentLanguage
         };
+        console.log(action.currentLanguage, 'CLICK_UPDATE_ENGLISH');
 
 
         default:
