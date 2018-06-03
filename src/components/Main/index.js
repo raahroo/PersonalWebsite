@@ -1,6 +1,7 @@
 import React, { Component, } from 'react';
 import { connect } from 'react-redux';
 import MainGrid from './main-grid';
+import Animation from './animation';
 import Line from './../../svg/linie.svg';
 import logo from './../../logo.svg';
 
@@ -9,7 +10,7 @@ class Main extends Component {
     var { languages } = this.props.data;
     var { currentLanguage } = this.props.currentLanguage;
     return (
-      <section className="Main container">
+      <section className="Main container sr-item">
         <header className="container">
           <img src={logo}  id="first" className="App-logo" alt="logo" />
           <img src={Line} alt="Linie" />
@@ -23,7 +24,6 @@ class Main extends Component {
           </p>
         </header>
         <MainGrid languages={languages} currentLanguage={currentLanguage}/>
-        <div className="container ink" />
       </section>
     );
   }

@@ -18,7 +18,7 @@
 
 .MainGrid__second--first {
   padding: 0;
-  margin: 0px 0 0px 0;
+  margin: 15px 0 15px 0;
   font-size: 2rem;
   font-style: italic; }
   @media (max-width: 1200px) {
@@ -52,7 +52,7 @@
 
 .MainGrid__third--paragraph {
   font-size: 1.8rem;
-  padding: 10px;
+  padding: 0px;
   margin: 0;
   font-style: italic; }
   @media (max-width: 1200px) {

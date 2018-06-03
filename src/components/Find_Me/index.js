@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Animation from '../Main/animation';
 import Line from './../../svg/linie.svg';
 import Twitter from './../../svg/twitter.svg';
 import Octocat from './../../png/octocat.png';
@@ -7,15 +8,18 @@ import LinkedIn from './../../svg/linkedin.svg';
 import FindMeImg from './../../svg/findme.svg';
 import { Row, Col } from 'react-bootstrap';
 
-class FindeMe extends Component {
+class FindMe extends Component {
   render() {
+    var { languages } = this.props;
+    var { currentLanguage } = this.props;
     return (
-      <div id="findme" className="FindMe container">
+      <div className="FindMe container" id="findme">
+        <Animation right/> 
         <div className="Section container">
           <img src={Line} alt="Linie" />
           <div className="container Section__title--background">
             <h1 className="Section__title">
-              Find Me
+            {languages[currentLanguage].find}
             </h1>
           </div>
           <img src={Line} alt="Linie" />
@@ -37,6 +41,7 @@ class FindeMe extends Component {
                   <div className="FindMe__profile">
                     <img className="img-responsive" src={Profile} alt={"Profile"} />
                   </div>
+                   
                 </div>
               </div>
             </Col>
@@ -64,4 +69,4 @@ class FindeMe extends Component {
   }
 }
 
-export default FindeMe;
+export default FindMe;

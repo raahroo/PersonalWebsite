@@ -12,6 +12,7 @@
     "react-redux": "^5.0.7",
     "react-responsive": "^4.1.0",
     "react-scripts": "1.1.4",
+    "react-scrollreveal": "^1.1.2",
     "react-slick": "^0.23.1",
     "redux": "^4.0.0"
   },

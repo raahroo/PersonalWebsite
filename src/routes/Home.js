@@ -33,8 +33,8 @@ class Home extends Component {
               </div>
             </MediaQuery>
             <Main data={this.state} currentLanguage={this.props}/>
-            <SomeWorks />
-            <FindMe />
+            <SomeWorks languages={this.state.languages} currentLanguage={this.props.currentLanguage}/>
+            <FindMe languages={this.state.languages} currentLanguage={this.props.currentLanguage}/>
             <MenuContainer data={this.props}/>
         </div>
       );

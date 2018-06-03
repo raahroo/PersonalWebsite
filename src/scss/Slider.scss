@@ -3,7 +3,7 @@
 @import "./Global.scss";
 
 .slick-next {
-    right: 0px;
+    right: -15px;
     display: block;
     height: 100%;
     z-index: 9;
@@ -11,7 +11,7 @@
 }
 
 .slick-prev {
-    left: 0px;
+    left: -15px;
     display: block;
     height: 100%;
     z-index: 9;
@@ -85,11 +85,18 @@
         padding: 10px;
         max-width: 200px;
         margin: 30px auto;
+        -webkit-box-shadow: 3px 4px 46px -3px rgba(0,0,0,0.86);
+        -moz-box-shadow: 3px 4px 46px -3px rgba(0,0,0,0.86);
+        box-shadow: 3px 4px 46px -3px rgba(0,0,0,0.86);
 
     }
 
     &__right{
         display: block;
+    }
+
+    &__h1 {
+        @include responsive-font-size(3rem);
     }
 }
 
@@ -119,8 +126,27 @@
 
 .slick-dots li {
     @media only screen and (max-width: $phone) {
-        width: 30px;
-        height: 30px;
-        margin: 0 8px;
+        width: 40px;
+        height: 40px;
+        margin: 0 12px;
+    }
+}
+
+.slick-dots {
+    @media only screen and (max-width: $phone) {
+        height: 50px;
+        top: -80px !important;
+    }
+}
+
+.slick-next:before, .slick-prev:before {
+    @media only screen and (max-width: $desktop) {
+        color: #000;
+    }
+}
+
+.slick-next:before {
+     @media only screen and (min-width: $desktop) {
+        color: $beige;
     }
 }

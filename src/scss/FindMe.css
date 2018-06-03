@@ -1,5 +1,8 @@
 .FindMe {
-  padding: 150px 0 0 0; }
+  padding: 180px 0 0 0; }
+  @media only screen and (max-width: 767px) {
+    .FindMe {
+      padding: 600px 0 0 0; } }
   .FindMe__octo {
     margin: 30px auto;
     text-align: center; }

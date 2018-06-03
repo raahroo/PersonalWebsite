@@ -202,6 +202,7 @@
     min-height: 50px;
     min-width: 50px;
     top: 10px;
+    z-index: 2;
 
     img {
       display: block;
@@ -209,3 +210,20 @@
   }
 }
 
+.background__mobile {
+  background:$beige;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index:0;
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #D1C9AC), to(rgba(211, 209, 172, 0)));
+  background: -webkit-linear-gradient(#D1C9AC 40%, rgba(211, 209, 172, 0));
+  background: -o-linear-gradient(#D1C9AC 40%, rgba(211, 209, 172, 0));
+  background: linear-gradient(#D1C9AC 40%, rgba(211, 209, 172, 0));
+  -webkit-box-shadow: inset 0px 31px 58px -3px #654a07;
+  box-shadow: inset 0px 31px 58px -3px #654a07;
+  -webkit-box-shadow: inset 0px 31px 58px -14px #654a07;
+  box-shadow: inset 0px 31px 58px -14px #654a07;
+}

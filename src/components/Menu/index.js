@@ -29,6 +29,10 @@ class MenuContainer extends Component {
     render() {
         const { deustchButton, englishButton } = this.props;
         return (
+        <div>
+            <MediaQuery query="(max-width: 1224px)">
+              <div className="background__mobile"/>
+            </MediaQuery>
         <div
             className={"MenuContainer" + (this.state.visible ? '__opened' : '')}
             onClick={this.handleClick}>
@@ -39,10 +43,8 @@ class MenuContainer extends Component {
                         <img src={Close} alt="close" />
                     </button>
                     <MenuItem hash="first" label="First" mobile />
-                    <MenuItem hash="info" label="Info" mobile/>
                     <MenuItem hash="someworks" label="Some Works" mobile/>
-                    <MenuItem hash="findme" label="Find me" mobile/>
-                   <MenuItem label="Language" mobile/>    
+                    <MenuItem hash="findme" label="Find me" mobile/> 
                     <div className="MenuContainer__language">    
                         <a
                             className="MenuContainer__language__link"
@@ -66,6 +68,7 @@ class MenuContainer extends Component {
                     <img className="MenuContainer__line" src={Line} alt="Linie" />
                 </Menu>
             </MediaQuery>
+            </div>
             </div>
         );
     }

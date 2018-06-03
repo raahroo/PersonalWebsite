@@ -1,3 +1,7 @@
+body {
+  width: 100%;
+  overflow-x: hidden; }
+
 .Section__box {
   border: 0.3rem solid transparent;
   border-image: url("./../svg/randlinie.svg") 49%;
@@ -47,24 +51,12 @@
     .Section__title {
       font-size: calc(2.2rem + 6.4vw) ; } }
   .Section__title--background {
-    background: url("./../png/streifen.png") no-repeat;
-    min-height: 160px;
+    background: linear-gradient(90deg, #000000 70%, rgba(0, 0, 0, 0.6) 30%);
     padding: 15px;
     margin-bottom: 80px; }
 
 .margin-20 {
   margin: 25px 0 0 0; }
-
-.ink {
-  width: 100%;
-  height: 338px;
-  margin: 2% auto;
-  background: url("./../png/tintentropfen.png") left center;
-  animation: play 2s steps(51) infinite; }
-
-@keyframes play {
-  100% {
-    background-position: -30600px; } }
 
 @media only screen and (max-width: 480px) {
   .Section__box__intern {
@@ -103,10 +95,10 @@
     transform: translate(-50%, -50%); }
   .last {
     min-height: 410px !important; }
-  .Section__title--background {
-    background: url("./../png/streifen_small.png") no-repeat;
-    min-height: 160px;
-    padding: 15px; } }
+  /*  .Section__title--background {
+        background: linear-gradient(90deg, $black  50%, rgba(0,0,0,0.6) 50%);
+        padding: 15px;     
+    } */ }
 
 @media only screen and (max-width: 767px) {
   .Content {
@@ -140,16 +132,18 @@
 
 .negative {
   background-color: #000000;
-  color: #D1C9AC; }
-  .negative:after {
-    position: absolute;
-    content: url("./../png/ink.png");
-    right: -25px;
-    top: -100px; }
-    @media only screen and (max-width: 767px) {
-      .negative:after {
-        right: -15px;
-        top: -200px; } }
+  color: #D1C9AC;
+  /*  &:after {
+        position: absolute;
+        content: url("./../png/ink.png");
+        right: -25px;
+        top: -100px;
+
+        @media only screen and (max-width: $phone) {
+            right: -15px;
+            top: -200px;
+        } 
+    } */ }
 
 @media only screen and (max-width: 1224px) {
   .MenuContainer__opened {
@@ -346,6 +340,23 @@
     display: block;
     min-height: 50px;
     min-width: 50px;
-    top: 10px; }
+    top: 10px;
+    z-index: 2; }
     .Menu__hamburguer img {
       display: block; }
+
+.background__mobile {
+  background: #D1C9AC;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #D1C9AC), to(rgba(211, 209, 172, 0)));
+  background: -webkit-linear-gradient(#D1C9AC 40%, rgba(211, 209, 172, 0));
+  background: -o-linear-gradient(#D1C9AC 40%, rgba(211, 209, 172, 0));
+  background: linear-gradient(#D1C9AC 40%, rgba(211, 209, 172, 0));
+  -webkit-box-shadow: inset 0px 31px 58px -3px #654a07;
+  box-shadow: inset 0px 31px 58px -3px #654a07;
+  -webkit-box-shadow: inset 0px 31px 58px -14px #654a07;
+  box-shadow: inset 0px 31px 58px -14px #654a07; }

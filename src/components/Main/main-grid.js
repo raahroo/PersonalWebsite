@@ -12,7 +12,6 @@ class MainGrid extends Component {
   render() {
     var { languages } = this.props;
     var { currentLanguage } = this.props;
-    console.log(languages, 'props');
     return (
         <Grid id="info" className="MainGrid container">
             <Row className="show-grid">
@@ -89,10 +88,10 @@ class MainGrid extends Component {
                                 </Col>
                             </Row>
                             <Row className="Section__box__negativebottom">
-                                <Col xs={6}>
+                                <Col xs={4}>
                                     <h1 className="MainGrid__third--h1">2018</h1>
                                 </Col>
-                                <Col xs={6}>
+                                <Col xs={8}>
                                     <img src={BeigeLinie} alt="BeigeLinie" />  
                                     <p className="MainGrid__third--paragraph">{languages[currentLanguage].graphic}</p>
                                     <img src={BeigeLinie} alt="BeigeLinie" />  
