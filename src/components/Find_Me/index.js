@@ -15,7 +15,7 @@ class FindMe extends Component {
     return (
       <div className="FindMe container">
           <img src={Line} alt="Linie" />
-          <SectionTitle label={languages[currentLanguage].find} />
+          <SectionTitle label={languages[currentLanguage].find} lessBorder/>
           <Row>
             <Col xs={12} md={8}>
               <div className="Section__box">
