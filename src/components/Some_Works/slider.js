@@ -1,7 +1,8 @@
 import React from 'react';
 import Slider from 'react-slick';
-import ImageWork from './../../png/job.png';
 import Sonnenkollektor from './../../png/sonnenkollektor.png';
+import Medizin from './../../png/medizin.png';
+import Elefant from './../../png/elefant.png';
 import {Col, Row} from 'react-bootstrap';
 
 export default class WorksSlider extends React.Component{
@@ -15,8 +16,8 @@ export default class WorksSlider extends React.Component{
         };
         var content = [
             { language: 'WordPress - PHP', image: Sonnenkollektor, paragraph: 'Windeo Brasil is a proud Brazilian company that, through the experience of its founders in the international market, has brought from Europe the most modern and complete solutions in self-generation of energy through renewable sources.', link:'https://windeo.com.br/' },
-            { language: 'JS', image: ImageWork, paragraph: 'Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor' },
-            { language: 'Python', image: ImageWork, paragraph: 'Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor' }
+            { language: 'HTML5, JQuery, Grunt', image: Elefant, paragraph: 'The Brazil Elephants Sanctuary has emerged as a project in 2010, and since 2012 has been vigorously working to change the harsh reality of elephants living in captivity. With an area of more than 1,100 hectares in the Chapada dos Guimarães, MT, the Sanctuary has the space and structure necessary for elephants to feel as close as possible to their habitat', link:'https://oresgatedoselefantes.com.br/' },
+            { language: 'ReactJs', image: Medizin, paragraph: 'Teamwork, ReactJs components, Scrum methodology. Content portal of the area of medicine and health.', link:'http://www.conexaosegurosunimed.com.br/' }
         ];
         return(
             <Slider {...settings}>

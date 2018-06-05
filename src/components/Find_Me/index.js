@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Animation from '../Main/animation';
+import SectionTitle from '../Section/title';
 import Line from './../../svg/linie.svg';
 import Twitter from './../../svg/twitter.svg';
 import Octocat from './../../png/octocat.png';
@@ -13,16 +13,9 @@ class FindMe extends Component {
     var { languages } = this.props;
     var { currentLanguage } = this.props;
     return (
-      <div className="FindMe container" id="findme">
-        <Animation right/> 
-        <div className="Section container">
+      <div className="FindMe container">
           <img src={Line} alt="Linie" />
-          <div className="container Section__title--background">
-            <h1 className="Section__title">
-            {languages[currentLanguage].find}
-            </h1>
-          </div>
-          <img src={Line} alt="Linie" />
+          <SectionTitle label={languages[currentLanguage].find} />
           <Row>
             <Col xs={12} md={8}>
               <div className="Section__box">
@@ -41,7 +34,6 @@ class FindMe extends Component {
                   <div className="FindMe__profile">
                     <img className="img-responsive" src={Profile} alt={"Profile"} />
                   </div>
-                   
                 </div>
               </div>
             </Col>
@@ -63,7 +55,6 @@ class FindMe extends Component {
               </div>
             </Col>
           </Row>
-        </div>
       </div>
     );
   }

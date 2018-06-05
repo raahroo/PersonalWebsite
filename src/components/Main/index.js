@@ -10,9 +10,9 @@ class Main extends Component {
     var { languages } = this.props.data;
     var { currentLanguage } = this.props.currentLanguage;
     return (
-      <section className="Main container sr-item">
+      <div className="Main container sr-item first">
         <header className="container">
-          <img src={logo}  id="first" className="App-logo" alt="logo" />
+          <img src={logo} className="App-logo" alt="logo" />
           <img src={Line} alt="Linie" />
           <h4 className="Main__presentation">{languages[currentLanguage].first}</h4>
           <p className="Main__von">{languages[currentLanguage].from}</p>
@@ -24,7 +24,7 @@ class Main extends Component {
           </p>
         </header>
         <MainGrid languages={languages} currentLanguage={currentLanguage}/>
-      </section>
+      </div>
     );
   }
 }

@@ -1,6 +1,6 @@
 @import "./Colors.scss";
 @import "./Functions.scss";
-@import "./Global.scss";
+@import "./Section.scss";
 
 .slick-next {
     right: -15px;
@@ -20,8 +20,7 @@
 
 .slick-dots {
     height: 50px;
-    top: -105px;
-    margin-bottom: 50px;
+    top: -95px;
 
     .slick-active {
         background: rgba(0,0,0,0.3);
@@ -65,6 +64,7 @@
     &__img {
         max-width: 100%;
         margin: 30px auto;
+        opacity: 0.8;
     }
 
     &__box {
@@ -78,7 +78,7 @@
         overflow: auto;
     }
 
-    &__link{
+    &__link {
         display: block;
         background: $beige;
         color: $black;
@@ -88,15 +88,24 @@
         -webkit-box-shadow: 3px 4px 46px -3px rgba(0,0,0,0.86);
         -moz-box-shadow: 3px 4px 46px -3px rgba(0,0,0,0.86);
         box-shadow: 3px 4px 46px -3px rgba(0,0,0,0.86);
+        transition: all 0.3s;
+
+        &:hover {
+            border: 1px solid $beige;
+            background: $black;
+            color: $beige;
+            text-decoration: none !important;
+        }
 
     }
 
-    &__right{
+    &__right {
         display: block;
     }
 
     &__h1 {
         @include responsive-font-size(3rem);
+        margin: 20px 0 20px 0;
     }
 }
 
@@ -104,7 +113,13 @@
 
 .slick-slider {
   div {
-    outline: 0;     
+    outline: 0;    
+    
+    @media only screen and (max-width: $phone) {
+       margin: 0;
+       padding: 0;
+    }
+
     @media only screen and (min-width: $desktop) {
         min-height: 400px;
     }
@@ -148,5 +163,19 @@
 .slick-next:before {
      @media only screen and (min-width: $desktop) {
         color: $beige;
+    }
+}
+
+
+.slick-next {
+    @media only screen and (max-width: $phone) {
+        right: -35px;
+    }
+}
+
+.slick-prev {
+    @media only screen and (max-width: $phone) {
+        left: -35px;
+      
     }
 }

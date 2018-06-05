@@ -7,12 +7,12 @@
         margin-top: -50px;
         .ink {
             right: -200px;
-            top: -100px;
+            top: -50px;
             transform: scale(0.3);
         }
         .ink2 {
             right: -100px;
-            top: -80px;
+            top: -60px;
             transform: scale(0.1);
         }
         .ink3 {
@@ -23,82 +23,57 @@
         
     }
 
-    &__left {
-        -moz-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
+    &__last {
         margin-top: -50px;
 
         .ink {
             right: -200px;
             top: -50px;
-            transform: scale(0.1);
+            transform: scale(0.3);
         }
         .ink2 {
             right: -100px;
-            top: -80px;
-            transform: scale(0.3);
-        }
-        .ink3 {
-            right: 0px;
-            top: -50px;
-            transform: scale(0.2);
-        }
-
-        .ink4 {
-            right: -150px;
             top: -50px;
             transform: scale(0.1);
+        }
+        .ink3 {
+            right: -50px;
+            top: -30px;
+            transform: scale(0.2);
         }
     }
 }
 
-.ink {
-    width: 600px;
-    height: 338px;
-    margin: 2% auto;
-    background: url('./../png/tintentropfen.png') left center no-repeat;
-    animation: play 6s steps(51) infinite;
-   
-    position: absolute;
-  
-  }
+    .ink {
+        width: 600px;
+        height: 338px;
+        margin: 2% auto;
+        background: url('./../png/tintentropfen.png') left center no-repeat;
+        animation: play 6s steps(51) infinite;
+        position: absolute;
+    }
 
-  .ink2 {
-    width: 600px;
-    height: 338px;
-    margin: 2% auto;
-    background: url('./../png/tintentropfen.png') left center no-repeat;
-    animation: play 4s steps(51) infinite;
+    .ink2 {
+        width: 600px;
+        height: 338px;
+        margin: 2% auto;
+        background: url('./../png/tintentropfen.png') left center no-repeat;
+        animation: play 4s steps(51) infinite;
+        position: absolute;
     
-    position: absolute;
-   
-  }
+    }
 
-  .ink3 {
-    width: 600px;
-    height: 338px;
-    margin: 2% auto;
-    background: url('./../png/tintentropfen.png') left center no-repeat;
-    animation: play 5s steps(51) infinite;
-   
-    position: absolute;
-  
-  }
+    .ink3 {
+        width: 600px;
+        height: 338px;
+        margin: 2% auto;
+        background: url('./../png/tintentropfen.png') left center no-repeat;
+        animation: play 5s steps(51) infinite;
+        position: absolute;
+    
+    }
 
-  .ink4 {
-    width: 600px;
-    height: 338px;
-    margin: 2% auto;
-    background: url('./../png/tintentropfen.png') left center no-repeat;
-    animation: play 5s steps(51) infinite;
-   
-    position: absolute;
-  
-  }
-
-@keyframes play {
-    from { background-position: 0; }
-    to { background-position: -30600px; }
-}
+    @keyframes play {
+        from { background-position: 0; }
+        to { background-position: -30600px; }
+    }

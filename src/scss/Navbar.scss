@@ -1,0 +1,29 @@
+@import "./Colors.scss";
+
+.navbar {
+    background-color: $black;
+    border-color: $black;
+
+    .navbar-collapse, .navbar-inverse .navbar-form{
+        border-color: $black;
+    }
+
+    &-default {
+        background-image: none;
+
+        .navbar-toggle {
+            border-color: transparent;
+        }
+    }
+
+    &-brand {
+        color: $beige !important;
+    }
+
+    &-nav {
+        li a {
+            color: $beige !important;
+        }
+    }
+}
+

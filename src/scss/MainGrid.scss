@@ -12,7 +12,7 @@
             @include responsive-font-size(6rem);
         }
         &--paragraph {
-            @include responsive-font-size(1.6rem);
+            @include responsive-font-size(1.5rem);
             padding: 10px;
             font-style: italic;
         }
@@ -100,11 +100,13 @@
 
 .MainGrid__second--h1 {
     @media only screen and (max-width: $phone) {
-        @include responsive-font-size(10rem);
+        @include responsive-font-size(8rem);
+        margin-top: -15px;
     }
 
     @media only screen and (min-width: $tablet) {
         @include responsive-font-size(7rem);
+        margin-top: -5px;
     }
 
     @media only screen and (min-width: $laptop) {
@@ -113,6 +115,7 @@
 
     @media only screen and (min-width: $desktop) {
         @include responsive-font-size(10rem);
+        margin-top: -15px;
     }
 }
 

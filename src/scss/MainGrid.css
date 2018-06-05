@@ -9,12 +9,12 @@
       font-size: calc(2rem + 5.33333vw) ; } }
 
 .MainGrid__first--paragraph {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   padding: 10px;
   font-style: italic; }
   @media (max-width: 1200px) {
     .MainGrid__first--paragraph {
-      font-size: calc(1.12rem + 0.64vw) ; } }
+      font-size: calc(1.1rem + 0.53333vw) ; } }
 
 .MainGrid__second--first {
   padding: 0;
@@ -105,14 +105,16 @@
 
 @media only screen and (max-width: 767px) {
   .MainGrid__second--h1 {
-    font-size: 10rem; } }
+    font-size: 8rem;
+    margin-top: -15px; } }
   @media only screen and (max-width: 767px) and (max-width: 1200px) {
     .MainGrid__second--h1 {
-      font-size: calc(2.8rem + 9.6vw) ; } }
+      font-size: calc(2.4rem + 7.46667vw) ; } }
 
 @media only screen and (min-width: 768px) {
   .MainGrid__second--h1 {
-    font-size: 7rem; } }
+    font-size: 7rem;
+    margin-top: -5px; } }
   @media only screen and (min-width: 768px) and (max-width: 1200px) {
     .MainGrid__second--h1 {
       font-size: calc(2.2rem + 6.4vw) ; } }
@@ -126,7 +128,8 @@
 
 @media only screen and (min-width: 1200px) {
   .MainGrid__second--h1 {
-    font-size: 10rem; } }
+    font-size: 10rem;
+    margin-top: -15px; } }
   @media only screen and (min-width: 1200px) and (max-width: 1200px) {
     .MainGrid__second--h1 {
       font-size: calc(2.8rem + 9.6vw) ; } }

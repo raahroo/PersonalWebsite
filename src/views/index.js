@@ -3,10 +3,12 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { deustchButton, englishButton } from '../actions';
 import MediaQuery from 'react-responsive';
-import MenuContainer from './../components/Menu/';
+import Section from './../components/Section/';
+import Menu from './../components/Menu/menu_simple';
 import Main from './../components/Main/';
 import SomeWorks from './../components/Some_Works/';
 import FindMe from './../components/Find_Me/';
+import Footer from './../components/Footer/';
 import Languages from './../data/languages.json';
 import './../scss/App.css';
 
@@ -32,10 +34,13 @@ class Home extends Component {
                 </button>
               </div>
             </MediaQuery>
-            <Main data={this.state} currentLanguage={this.props}/>
-            <SomeWorks languages={this.state.languages} currentLanguage={this.props.currentLanguage}/>
-            <FindMe languages={this.state.languages} currentLanguage={this.props.currentLanguage}/>
-            <MenuContainer data={this.props}/>
+            <Section id="first" child={<Main data={this.state} currentLanguage={this.props}/>} />
+            <Section id="someworks" child={ <SomeWorks languages={this.state.languages} currentLanguage={this.props.currentLanguage}/>} />
+            <Section id="findme" child={ <FindMe languages={this.state.languages} currentLanguage={this.props.currentLanguage}/>} />
+           
+            <Footer />
+            {/*<MenuContainer data={this.props}/>*/}
+            <Menu />
         </div>
       );
     }

@@ -7,12 +7,11 @@ import React, { Component } from 'react';
         const { animationContainerReference } = this.props;
         return (
             <div ref={animationContainerReference} className="Animation container">
-            { this.props.left &&
-                <div className="Animation__left">
-                    <div className="ink2 sr-item--sequence2" />
+            { this.props.last &&
+                <div className="Animation__last">
                     <div className="ink sr-item--sequence" />
+                    <div className="ink2 sr-item--sequence2" />
                     <div className="ink3 sr-item--sequence3" />
-                    <div className="ink4 sr-item--sequence4" />
                 </div>
             }
 
@@ -59,14 +58,6 @@ export default withScrollReveal([
         options: {
             reset: true,
             delay: 1600,
-        },
-        interval: 100
-    },
-    {
-        selector: '.sr-item--sequence4',
-        options: {
-            reset: true,
-            delay:1600,
         },
         interval: 100
     }

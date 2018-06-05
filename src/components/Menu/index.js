@@ -34,7 +34,7 @@ class MenuContainer extends Component {
               <div className="background__mobile"/>
             </MediaQuery>
         <div
-            className={"MenuContainer" + (this.state.visible ? '__opened' : '')}
+            className={"snap MenuContainer" + (this.state.visible ? '__opened' : '')}
             onClick={this.handleClick}>
             <MediaQuery query="(max-width: 1224px)">
                 <Menu ref="left" alignment="left" visible={this.state.visible} mobile>

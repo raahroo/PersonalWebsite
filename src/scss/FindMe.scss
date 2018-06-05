@@ -2,11 +2,6 @@
 @import "./Colors.scss";
 
 .FindMe {
-    @media only screen and (max-width: $phone) {
-        padding: 600px 0 0 0;
-    }
-
-    padding: 180px 0 0 0;
     
     &__octo {
         margin: 30px auto;

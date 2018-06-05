@@ -1,13 +1,13 @@
 @import "./Colors.scss";
 @import "./Menu.scss";
 @import "./Main.scss";
-@import "./Global.scss";
+@import "./Section.scss";
 @import "./MainGrid.scss";
 @import "./Slider.scss";
 @import "./FindMe.scss";
 @import "./SomeWorks.scss";
 @import "./Animation.scss";
-
+@import "./Navbar.scss";
 
 
 @import url('https://fonts.googleapis.com/css?family=Anton|Cormorant+Garamond');
@@ -59,8 +59,4 @@ body {
 
 .App-intro {
   font-size: large;
-}
-
-.Section {
-  height: 100vh;
 }

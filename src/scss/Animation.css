@@ -2,39 +2,31 @@
   margin-top: -50px; }
   .Animation__right .ink {
     right: -200px;
-    top: -100px;
+    top: -50px;
     transform: scale(0.3); }
   .Animation__right .ink2 {
     right: -100px;
-    top: -80px;
+    top: -60px;
     transform: scale(0.1); }
   .Animation__right .ink3 {
     right: -50px;
     top: -50px;
     transform: scale(0.2); }
 
-.Animation__left {
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+.Animation__last {
   margin-top: -50px; }
-  .Animation__left .ink {
+  .Animation__last .ink {
     right: -200px;
     top: -50px;
-    transform: scale(0.1); }
-  .Animation__left .ink2 {
-    right: -100px;
-    top: -80px;
     transform: scale(0.3); }
-  .Animation__left .ink3 {
-    right: 0px;
-    top: -50px;
-    transform: scale(0.2); }
-  .Animation__left .ink4 {
-    right: -150px;
+  .Animation__last .ink2 {
+    right: -100px;
     top: -50px;
     transform: scale(0.1); }
+  .Animation__last .ink3 {
+    right: -50px;
+    top: -30px;
+    transform: scale(0.2); }
 
 .ink {
   width: 600px;
@@ -53,14 +45,6 @@
   position: absolute; }
 
 .ink3 {
-  width: 600px;
-  height: 338px;
-  margin: 2% auto;
-  background: url("./../png/tintentropfen.png") left center no-repeat;
-  animation: play 5s steps(51) infinite;
-  position: absolute; }
-
-.ink4 {
   width: 600px;
   height: 338px;
   margin: 2% auto;
