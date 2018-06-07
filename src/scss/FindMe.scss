@@ -9,6 +9,8 @@
 
         .img-responsive {
             margin: 0 auto;
+            transform: translatey(0px);
+            animation: float 4s ease-in-out infinite;
         }
     }
 

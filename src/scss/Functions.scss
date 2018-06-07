@@ -196,6 +196,17 @@ $enable-responsive-font-sizes: true !default;
   @include rfs($fs, $important);
 }
 
+@keyframes float {
+	0% {
+		transform: translatey(20px);
+	}
+	50% {
+		transform: translatey(0px);
+	}
+	100% {
+		transform: translatey(20px);
+	}
+}
 
 //Responsive Screen Sizes
 $small-phone: 480px;

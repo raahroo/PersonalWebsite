@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 import { deustchButton, englishButton } from '../actions';
 import MediaQuery from 'react-responsive';
 import Section from './../components/Section/';
-import Menu from './../components/Menu/menu_simple';
+import SimpleMenu from './../components/Menu/simple_menu';
 import Main from './../components/Main/';
 import SomeWorks from './../components/Some_Works/';
 import FindMe from './../components/Find_Me/';
@@ -40,7 +40,7 @@ class Home extends Component {
            
             <Footer />
             {/*<MenuContainer data={this.props}/>*/}
-            <Menu />
+            <SimpleMenu />
         </div>
       );
     }
