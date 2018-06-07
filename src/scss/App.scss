@@ -8,6 +8,7 @@
 @import "./SomeWorks.scss";
 @import "./Animation.scss";
 @import "./Navbar.scss";
+@import "./Footer.scss";
 
 
 @import url('https://fonts.googleapis.com/css?family=Anton|Cormorant+Garamond');
@@ -25,28 +26,19 @@ body {
   text-align: center;
   position: relative;
 
-  &__language {
-    position: fixed;
-    right: 0;
-    z-index: 3;
-    padding: 25px 20px 0 0;
-
-    &:first-child:before{
-      content: '∫';
-      position: absolute;
-      left: 55px;
-    }
-
-    &--button{
-      @include transparent(transparent); 
-    }
+  .last-section {
+    margin: 0;
   }
+
 }
 
 .App-logo {
   height: 80px;
   margin: 0 auto;
   margin-top: 10px;
+  @media only screen and (max-width: $phone) {
+    margin-top: 0px;
+  }
 }
 
 .App-header {

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { deustchButton, englishButton } from '../actions';
-import MediaQuery from 'react-responsive';
 import Section from './../components/Section/';
 import SimpleMenu from './../components/Menu/simple_menu';
 import Main from './../components/Main/';
@@ -24,23 +23,12 @@ class Home extends Component {
       const { currentLanguage, deustchButton, englishButton } = this.props;
       return (
         <div className="App">
-            <MediaQuery query="(min-width: 1224px)">
-              <div className="App__language">
-                <button className="App__language--button" 
-                  onClick={() => deustchButton(0)}>Deustch
-                </button>
-                <button className="App__language--button" 
-                  onClick={() => englishButton(1)}>English
-                </button>
-              </div>
-            </MediaQuery>
+            <SimpleMenu />
             <Section id="first" child={<Main data={this.state} currentLanguage={this.props}/>} />
             <Section id="someworks" child={ <SomeWorks languages={this.state.languages} currentLanguage={this.props.currentLanguage}/>} />
-            <Section id="findme" child={ <FindMe languages={this.state.languages} currentLanguage={this.props.currentLanguage}/>} />
-           
-            <Footer />
+            <Section lastSection id="findme" child={ <FindMe languages={this.state.languages} currentLanguage={this.props.currentLanguage}/>} />
+            <Footer currentLanguage={currentLanguage} languages={this.state.languages} />
             {/*<MenuContainer data={this.props}/>*/}
-            <SimpleMenu />
         </div>
       );
     }

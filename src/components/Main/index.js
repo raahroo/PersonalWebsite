@@ -1,7 +1,5 @@
 import React, { Component, } from 'react';
-import { connect } from 'react-redux';
 import MainGrid from './main-grid';
-import Animation from './animation';
 import Line from './../../svg/linie.svg';
 import logo from './../../logo.svg';
 

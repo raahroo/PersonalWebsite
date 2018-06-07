@@ -29,24 +29,24 @@ class SimpleMenu extends React.Component {
             </Navbar.Header>
             <Navbar.Collapse>
                 <Nav>
-                    <NavItem eventKey={1} href="#first">
+                    <NavItem href="#first">
                         <img src={iconBeige} className="SimpleMenu__icon" alt="icon" /> First
                     </NavItem>
-                    <NavItem eventKey={2} href="#someworks">
+                    <NavItem href="#someworks">
                         <img src={iconBeige} className="SimpleMenu__icon" alt="icon" /> Some Works
                     </NavItem>
-                    <NavItem eventKey={3} href="#findme">
+                    <NavItem href="#findme">
                         <img src={iconBeige} className="SimpleMenu__icon" alt="icon" /> Find Me
                     </NavItem>
                 </Nav>
                 <Nav pullRight>
-                    <NavItem className="SimpleMenu__language" eventKey={4}  onClick={() => deustchButton(0)}>
+                    <NavItem className="SimpleMenu__language" onClick={() => deustchButton(0)}>
                         Deutsch
                     </NavItem>
                     <li className="SimpleMenu__language">
                         <span >∫</span>
                     </li>
-                    <NavItem className="SimpleMenu__language" eventKey={5}  onClick={() => englishButton(1)}>
+                    <NavItem className="SimpleMenu__language" onClick={() => englishButton(1)}>
                         English
                     </NavItem>
                 </Nav>

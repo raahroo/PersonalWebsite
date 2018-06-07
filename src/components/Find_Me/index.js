@@ -5,7 +5,6 @@ import Twitter from './../../svg/twitter.svg';
 import Octocat from './../../png/octocat.png';
 import Profile from './../../png/cranium-hominis.png';
 import LinkedIn from './../../svg/linkedin.svg';
-import FindMeImg from './../../svg/findme.svg';
 import { Row, Col } from 'react-bootstrap';
 
 class FindMe extends Component {
@@ -17,18 +16,18 @@ class FindMe extends Component {
           <img src={Line} alt="Linie" />
           <SectionTitle label={languages[currentLanguage].find} lessBorder/>
           <Row>
-            <Col xs={12} md={8}>
+            <Col xs={10} xsOffset={1} md={8} mdOffset={0}>
               <div className="Section__box">
                 <div className="Section__box__intern">
                   <div className="FindMe__octo">
-                    <a href="https://github.com/raahroo/" target="_blank">
+                    <a href="https://github.com/raahroo/" target="_blank" rel="noopener noreferrer">
                       <img className="img-responsive" src={Octocat} alt={"Octocat"} />
                     </a>
                   </div>
                 </div>
               </div>
             </Col>
-            <Col xs={12} md={4}>
+            <Col xs={10} xsOffset={1} md={4} mdOffset={0}>
               <div className="Section__box">
                 <div className="Section__box__intern">
                   <div className="FindMe__profile">
@@ -40,12 +39,12 @@ class FindMe extends Component {
           </Row>
           <Row>
             <Col xs={6} md={4}>
-              <a href="https://twitter.com/raahroo" target="_blank">
+              <a href="https://twitter.com/raahroo" target="_blank" rel="noopener noreferrer">
                 <img className="FindMe__social" src={Twitter} alt={"Twitter"} />
               </a>
             </Col>
             <Col xs={6} md={4}>
-              <a href="https://www.linkedin.com/in/raissa-hohenester-40846167/" target="_blank">
+              <a href="https://www.linkedin.com/in/raissa-hohenester-40846167/" target="_blank" rel="noopener noreferrer">
                 <img className="FindMe__social" src={LinkedIn} alt={"LinkedIn"} />
               </a>
             </Col>

@@ -21,6 +21,10 @@
         left: 16%;
         @include responsive-font-size(1.8rem);
         font-style: italic;
+        @media only screen and (max-width: $phone) {
+            top: 15%;
+            left: 10%;
+        }
     }
 
     &__octo:after {
@@ -34,6 +38,9 @@
         -webkit-transform: rotate(25deg);
         -ms-transform: rotate(25deg);
         transform: rotate(60deg);
+        @media only screen and (max-width: $phone) {
+            width: 50px;
+        }
     }
 
     &__profile {

@@ -1,0 +1,29 @@
+@import "./Colors.scss";
+@import "./Functions.scss";
+
+.Footer {
+    bottom: 0;
+    width: 100%;
+    margin: 10px 0 0 0;
+    color: $beige;
+
+    &__img {
+        margin-bottom: -5px;
+    }
+
+    &__black {
+        background-color: $black;
+        @media only screen and (max-width:$phone) {
+            height: 85vh;
+        }
+    }
+
+    &__paragraph {
+        padding: 56px 0;
+        @media only screen and (max-width:$phone) {
+           margin-top: 50%;
+        }
+    }
+
+    
+}

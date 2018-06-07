@@ -1,9 +1,7 @@
 import React, { Component, } from 'react';
 import SectionTitle from '../Section/title';
 import Line from './../../svg/linie.svg';
-import SomeWorksImg from './../../svg/someworks.svg';
 import WorkSlider from './slider';
-import Animation from '../Main/animation';
 
 class SomeWorks extends Component {
   render() {

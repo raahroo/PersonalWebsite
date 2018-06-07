@@ -4,9 +4,9 @@ import React, { Component } from 'react';
    class Animation extends Component{
 
     render() {
-        const { refreshrevealanimation, animationContainerReference } = this.props;
+        const { animationContainerReference } = this.props;
         return (
-            <div className="sr-item" ref={animationContainerReference} className="Animation container"> 
+            <div className="sr-item Animation container" ref={animationContainerReference}> 
             { this.props.last &&
                 <div className="Animation__last">
                     <div className="ink sr-item--sequence" />
