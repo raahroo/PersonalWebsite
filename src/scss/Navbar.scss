@@ -14,26 +14,56 @@
 
         .navbar-toggle {
             border-color: transparent;
+
+            &:focus, &:hover{
+                background-color: $beige;
+                .icon-bar {
+                    background-color: $black;
+                }
+            }
+
+            .icon-bar {
+                background-color: $beige;
+            }
         }
     }
 
     &-brand {
         color: $beige !important;
+        font-family: 'Anton', sans-serif;
     }
 
     &-nav {
         li a {
+            text-align: left;
             color: $beige !important;
         }
     }
 }
+
 .SimpleMenu {
     &__language {
         color: $beige;
         line-height: 50px;
-        padding: 0 8px;
+        padding: 0 4px;
         cursor: pointer;
-    }   
+        display: inline !important;
+        text-align: center;
+        
+        a {
+            display: inline !important;
+        }
+    } 
+    
+    &__icon {
+        max-width: 45px !important;
+        margin: 0 15px 0 0;
+        @include animation; 
+        @media only screen and (min-width: $phone) {
+            display: none;
+        }
+
+    }
 }
 
 

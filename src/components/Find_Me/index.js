@@ -3,7 +3,7 @@ import SectionTitle from '../Section/title';
 import Line from './../../svg/linie.svg';
 import Twitter from './../../svg/twitter.svg';
 import Octocat from './../../png/octocat.png';
-import Profile from './../../png/profile.png';
+import Profile from './../../png/cranium-hominis.png';
 import LinkedIn from './../../svg/linkedin.svg';
 import FindMeImg from './../../svg/findme.svg';
 import { Row, Col } from 'react-bootstrap';

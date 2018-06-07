@@ -22,7 +22,7 @@
         &--first {
             padding: 0;
             margin: 15px 0 15px 0;
-            @include responsive-font-size(2rem);
+            @include responsive-font-size(1.5rem);
             font-style: italic;
         }
         &--h1 {
@@ -31,13 +31,17 @@
             transition: all 0.3s;
             font-weight: 500;
         }
+
+        &--paragraph {
+            @include responsive-font-size(1.43rem);
+        }
     }
 
     &__third {
         &--intro {
             padding: 0;
             margin: 0;
-            @include responsive-font-size(2rem);
+            @include responsive-font-size(1.8rem);
             padding: 20px 10px 10px 10px;
             font-style: italic;
         }
@@ -46,7 +50,6 @@
             padding: 0;
             margin: 0;
             @include responsive-font-size(5rem);
-            padding: 10px;
         }
 
         &--paragraph {
@@ -89,13 +92,32 @@
     }
 
     @media only screen and (min-width: $laptop) {
-        @include responsive-font-size(5.3rem);
+        @include responsive-font-size(4rem);
     }
 
     @media only screen and (min-width: $desktop) {
         @include responsive-font-size(8rem);
     }
 }
+
+.MainGrid__second--first {
+    @media only screen and (max-width: $phone) {
+        @include responsive-font-size(2rem);
+    }
+
+    @media only screen and (min-width: $tablet) {
+        @include responsive-font-size(2rem);
+    }
+
+    @media only screen and (min-width: $laptop) {
+        @include responsive-font-size(1.5rem);
+    }
+
+    @media only screen and (min-width: $desktop) {
+        @include responsive-font-size(2rem);
+    }
+}
+
 
 
 .MainGrid__second--h1 {
@@ -105,12 +127,12 @@
     }
 
     @media only screen and (min-width: $tablet) {
-        @include responsive-font-size(7rem);
+        @include responsive-font-size(6rem);
         margin-top: -5px;
     }
 
     @media only screen and (min-width: $laptop) {
-        @include responsive-font-size(8rem);
+        @include responsive-font-size(5.5rem);
     }
 
     @media only screen and (min-width: $desktop) {
@@ -132,19 +154,25 @@
     }
 
     @media only screen and (max-width: $laptop) {
-        @include responsive-font-size(1.6rem);
+        @include responsive-font-size(1.43rem);
     }
 
     @media only screen and (min-width: $desktop) {
-        @include responsive-font-size(1.7rem);
+        @include responsive-font-size(1.43rem);
     } 
 }
 
-/* .MainGrid__third--paragraph{
-    @media only screen and (max-width: $small-phone) {
-        line-height: 23px;
+.MainGrid__third--paragraph{
+    @media only screen and (max-width:$laptop) {
+        @include responsive-font-size(2rem);
     }
-} */
+}
+
+.MainGrid__third--h1{
+    @media only screen and (max-width:$desktop) {
+        @include responsive-font-size(4rem);
+    }
+}
 
 #graphic {
     filter: sepia(1);

@@ -5,6 +5,7 @@ html, body {
     width: 100%;
     overflow-x: hidden;
     overflow:auto;
+    color: $black;
     @media only screen and (max-width: $phone) {
         height: 100%;
     }

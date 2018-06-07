@@ -93,7 +93,7 @@ class MainGrid extends Component {
                                 </Col>
                                 <Col xs={8}>
                                     <img src={BeigeLinie} alt="BeigeLinie" />  
-                                    <p className="MainGrid__third--paragraph">{languages[currentLanguage].graphic}</p>
+                                    <p className="MainGrid__third--paragraph">{languages[currentLanguage].source}</p>
                                     <img src={BeigeLinie} alt="BeigeLinie" />  
                                 </Col>
                             </Row>

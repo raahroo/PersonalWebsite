@@ -43,26 +43,6 @@
         .img-responsive {
             margin: 0 auto;
         }
-       
-        &:before {
-            position: absolute;
-            content: "xx";
-            top: 12%;
-            right: 5%;
-            @include responsive-font-size(1.8rem);
-            font-style: italic;
-        }
-
-        &:after {
-            position: absolute;
-            content: "";
-            height: 2px;
-            right: 0%;
-            top: 40%;
-            width: 150px;
-            border-top: 2px dotted;
-            transform: rotate(-60deg);
-        }
     }
 
     &__negative{
